@@ -202,18 +202,19 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    /* height: calc(100vh - 110px - 80px); */
 }
 
 .main_body img{
-    width: 275px;
-    height: 300px;
+    width: 255px;
+    height: 255px;
     border-radius: 100%;
     border: 3px solid whitesmoke;
 }
 
 .main_body h1{
     color: whitesmoke;
-    font-size: 47.5px;
+    font-size: 40px;
     text-shadow: 1px 1px 5px 5px black;
     margin: 20px;
 }
@@ -221,10 +222,12 @@ body{
 .main_body p{
     margin-top: -5px;
     color: whitesmoke;
-    font-size: 22.5px;
+    font-size: 20px;
     text-shadow: 1px 1px 5px 5px black;
     text-transform: capitalize;
-    width: 475px;
+    width: 95%;
+    max-width: 475px;
+    padding-bottom: 10px;
 }
 
 .main_footer{
@@ -237,14 +240,14 @@ body{
 }
 
 .footer_signature img{
-    width: 175px;
+    width: 155px;
     margin-bottom: -5px;
 }
 
 .footer_signature h2{
     color: whitesmoke;
     text-decoration: none;
-    font-size: 12.5px;
+    font-size: 10.5px;
     margin: 0px;
     padding: 2px;
 }
@@ -256,14 +259,14 @@ body{
 
 .social_media a{
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .linkedin{
-    width: 50px;
+    width: 37.5px;
 }
 .github{
-    width: 50px;
+    width: 37.5px;
 }
 
 /* ------MEDIA------ */
@@ -449,7 +452,7 @@ body{
 /* ****************ABOUT************************ */
 
 .about_title{
-    margin-top: 40px;
+    padding-top: 40px;
     margin-bottom: 5px;
     font-size: 40px;
     text-align: center;
@@ -457,7 +460,7 @@ body{
 
 .about_body_wrapper{
     width: 100%;
-    margin: auto;
+    margin: 0px auto;
     text-align: center;
     padding-bottom: 70px;
     background-image: linear-gradient(180deg, black, transparent 5%),linear-gradient(0deg, black, transparent 275%), url(/images/stars.JPG);
@@ -467,17 +470,17 @@ body{
 }
 
 .about_body{
-    width: 87.5%;
+    width: 98%;
     max-width: 900px;
-    margin: auto;
+    margin: 0px auto;
     padding: 10px 15px;
     border-radius: 10px;
 }
 
 .about_body p{
     color: white;
-    text-indent: 40px;
-    font-size: 25px;
+    text-indent: 25px;
+    font-size: 22.5px;
     margin: 20px auto;
     margin-top: 0px;
     text-align: left;
@@ -490,8 +493,9 @@ body{
 
 #my_story, #soccer, #boxing, #drawing{
     display: inline-block;
-    width: 265px;
-    margin: 10px;
+    width: 98%;
+    max-width: 265px;
+    margin: 10px auto;
     color: whitesmoke;
     text-align: center;
     font-size: 22.5px;
@@ -502,7 +506,8 @@ body{
 
 #my_story{
     background: blue;
-    width: 380px;
+    width: 98%;
+    max-width: 380px;
     margin: 0px auto;
     margin-bottom: 20px;
     border-bottom: rgb(3, 3, 139) 4px solid;
@@ -554,7 +559,7 @@ body{
 
 .arsenal_title{
     font-size: 40px;
-    width: 87.5%;
+    width: 90%;
     margin: 0px auto;
 }
 
@@ -564,15 +569,18 @@ body{
 }
 
 .arsenal_intro p{
-    width: 87.5%;
-    text-align: left;
-    text-indent: 30px;
-    font-size: 25px;
-    max-width: 900px;
+    width: 98%;
+    padding: 10px 15px;
+    text-indent: 25px;
+    font-size: 22.5px;
     margin: 20px auto;
+    text-align: left;
+    max-width: 900px;
 }
 
 #mouse_over_notice{
+    width: 90%;
+    margin: 0px auto;
     text-align: center;
     font-weight: bolder;
 }
@@ -592,21 +600,26 @@ body{
 
 .boxing_title{
     font-size: 40px;
-    margin-top: 40px;
+    padding-top: 40px;
     color: whitesmoke;
+    font-size: 40px;
+    width: 90%;
+    margin: 0px auto;
 }
 
 .boxing_body p{
-    font-size: 25px;
-    text-align: left;
-    text-indent: 30px;
-    margin: 40px auto;
-    width: 87.5%;
-    max-width: 900px;
     color: whitesmoke;
+    width: 98%;
+    padding: 10px 15px;
+    text-indent: 25px;
+    font-size: 22.5px;
+    margin: 20px auto;
+    text-align: left;
+    max-width: 900px;
 }
 
 #boxing_favorites{
+    text-indent: 0px;
     text-align: center;
 }
 
@@ -617,7 +630,7 @@ body{
     color: whitesmoke;
     margin: 30px auto;
     border-radius: 10px;
-    padding: 1%;
+    padding: 10px;
 }
 
 .boxer_name{
@@ -626,15 +639,17 @@ body{
 }
 
 .boxer p{
-    width: 97.5%;
+    width: 100%;
+    padding: 0px;
     font-size: 20px;
     margin: 20px auto;
     text-align: left;
-    text-indent: 30px;
+    text-indent: 20px;
 }
 
 .boxer iframe{
-    width: 97.5%;
+    width: 100%;
+    height: 400px;
 }
 
 /* **************ABOUT-DRAWING***************** */
@@ -649,25 +664,34 @@ body{
     color: whitesmoke;
 }
 
+.drawing_body h3{
+    font-size: 15px;
+}
+
 .drawing_title{
     font-size: 40px;
-    margin-top: 40px;
+    padding-top: 40px;
+    color: whitesmoke;
+    font-size: 40px;
+    width: 90%;
+    margin: 0px auto;
 }
 
 .joker{
     margin-top: 20px;
     margin-bottom: 0px;
-    width: 70%;
+    width: 85%;
     max-width: 500px;
     border-radius: 10px;
 }
 
 .drawing_body p{
-    width: 87.5%;
-    font-size: 25px;
+    width: 98%;
+    padding: 10px 15px;
+    text-indent: 25px;
+    font-size: 22.5px;
+    margin: 20px auto;
     text-align: left;
-    text-indent: 30px;
-    margin: 17.50px auto;
     max-width: 900px;
 }
 
@@ -675,15 +699,13 @@ body{
 /* **********ABOUT - WEB DEV STORY********** */
 
 .story_title{
-    width: 70%;
+    width: 90%;
     margin: auto;
-    margin-top: 40px;
+    padding-top: 40px;
     margin-bottom: 5px;
     font-size: 40px;
     text-align: center;
 }
-
-
 
 #data_title{
     margin-top: 60px;
@@ -756,12 +778,12 @@ body{
 }
 
 .project{
-    width: 87.5%;
+    width: 96.5%;
     max-width: 700px;
     margin: 20px auto;
     border: 1px solid black;
     border-radius: 10px;
-    padding: 10px;
+    padding: 5px;
     background-color: white;
 }
 
@@ -781,7 +803,7 @@ body{
     width: 100%;
     max-width: 625px;
     margin: 0px auto;
-    font-size: 22.5px;
+    font-size: 20px;
     padding: 17.5px 5px;
 }
 
@@ -843,19 +865,19 @@ body{
 }
 
 .contact_body h1{
-    font-size: 35px;
+    font-size: 20px;
     width: 96.5%;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0px auto;
     margin-top: -60px;
     margin-bottom: 40px;
     color: whitesmoke;
 }
 
-.contact_table{
-    width: 90%;
-    padding: 5px;
-    max-width: 600px;
+.contact_section{
+    width: 95%;
+    padding: 10px;
+    max-width: 400px;
     margin: 0px auto;
     background: rgb(75, 102, 92);
     color: whitesmoke;
@@ -863,9 +885,22 @@ body{
     border-radius: 10px;
 }
 
+.contact_section h3{
+    width: 100%;
+    padding: 2px;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px
+}
+
+.contact_section a{
+    color: whitesmoke;
+}
+
 .contact_table td{
     text-align: left;
     padding: 10px;
+    width: 30px;
 }
 
 .contact_table td a{
