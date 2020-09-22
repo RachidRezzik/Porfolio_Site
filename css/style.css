@@ -869,7 +869,8 @@ body{
     width: 96.5%;
     max-width: 500px;
     margin: 0px auto;
-    margin-top: -60px;
+    padding-top: 40px;
+    /* margin-top: -60px; */
     margin-bottom: 40px;
     color: whitesmoke;
 }
@@ -883,6 +884,7 @@ body{
     color: whitesmoke;
     font-size: 20px;
     border-radius: 10px;
+    margin-bottom: 40px;
 }
 
 .contact_section h3{
