@@ -1,0 +1,957 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    min-height: calc(100vh);
+}
+
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.everything_but_footer{
+    text-align: center;
+    height: calc(100vh - 146.8px - 25px );
+}
+
+#no_results_found{
+    padding-top: 70px;
+}
+/* ------------------------------landing Page----------------------------- */
+
+.login{
+    text-align: center;
+    width: 470px;
+    margin: 70px auto;
+    /* margin-bottom: -150px; */
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 40px 25px;
+}
+
+.login h1{
+    font-size: 45px;
+}
+
+.login span{
+    color: rgb(10, 95, 252);
+}
+
+.login a{
+    color: rgb(76, 181, 247);
+    font-size: 27.5px;
+}
+
+.login select{
+    width: 75%;
+}
+
+.login p{
+    font-size: 17.5px;
+    margin-top: 20px;
+}
+
+.login_input{
+    color: black;
+    width: 75%;
+    margin: 20px auto;
+    margin-bottom: 10px;
+    background: rgb(209, 206, 206);
+    padding: 20px 0px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px .5px rgba(0, 0, 0, 0.4);
+
+}
+
+.login_input h2{
+    display: block;
+    width: 65%;
+    margin: 0px auto;
+    text-align: left;
+}
+
+.login_input input{
+    width: 65%;
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    text-indent: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.login_button{
+    color: whitesmoke;
+    background: rgb(76, 181, 247);
+    border: none;
+    border-bottom: 3px solid rgb(9, 99, 155);
+    border-radius: 5px;
+    width: 125px;
+    font-size: 20px;
+    padding: 5px;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#login_error{
+    font-size: 15px;
+    line-height: 10px;
+    margin-top: 7.5px;
+    color: rgb(209, 206, 206);
+    text-align: center;
+}
+
+.login .forgot_password{
+    font-size: 18px;
+    padding: 20px;
+}
+
+/* -------------------------------create profile-----------------------------  */
+
+.create_section, .additional_info_section{
+    background: rgb(209, 206, 206);
+    margin: 20px auto;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    box-shadow: 0px 0px 5px .5px rgba(0, 0, 0, 0.4);
+}
+
+.create_section h2{
+    width: 225px;
+    margin: 0px auto;
+    text-align: left;
+}
+
+.additional_info_section h2{
+    /* width: 125px; */
+    margin: 0px auto;
+    text-align: center;
+}
+
+.create_section input, .create_section select{
+    width: 225px;
+    height: 30px;
+    margin: 5px auto;
+    margin-bottom: 30px;
+    text-align: left;
+    text-indent: 5px;
+    font-size: 17.5px;
+    outline: none;
+    border: none;
+}
+
+/* *************ADDITIONAL INFO*********** */
+
+.additional_info_section h2, .additional_info_section h4{
+    width: 220px;
+    margin: 0px auto;
+    text-align: left;
+}
+
+.additional_info_section input, .additional_info_section select{
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: 5px auto;
+    margin-bottom: 30px;
+    text-align: left;
+    text-indent: 10px;
+    font-size: 17.5px;
+    outline: none;
+    border: none;
+}
+
+.additional_info_section select{
+    text-indent: 5px;
+}
+
+#feet, #weight_class_lower{
+    margin-bottom: 5px;
+}
+
+.additional_info_section input, .additional_info_section select{
+    width: 220px;
+}
+
+.additional_info_section .day_of_week{
+    margin: 0px auto;
+    text-align: center;
+}
+
+#gym_time_error, #state_select_error{
+    margin: 0px auto;
+    margin-top: -25px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    width: 220px;
+    color: rgb(209, 206, 206);
+}
+
+#error_gym_info{
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color: white;
+}
+
+.gym_hours_section{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 95%;
+    max-width: 875px;
+    margin: 0px auto;
+    margin-top: 25px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+    text-align: center;
+}
+
+#gym_hours{
+    width: 300px;
+    height: 250px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#gym_hours td{
+    padding: 5px;
+}
+
+#green_checkmark, #red_x{
+    width: 15px;
+    height: 12.5px;
+    margin-left: 5px;
+    box-shadow: none;
+    padding-right: 2px;
+}
+
+#red_x{
+    margin-bottom: -1px;
+}
+
+::placeholder {
+    color: var(--c,black);
+}
+
+.create_section select{
+    text-indent: 0px;
+}
+
+.create_profile, .go_to_profile{
+    color: whitesmoke;
+    background: rgb(76, 181, 247);
+    border: none;
+    border-bottom: 3px solid rgb(9, 99, 155);
+    border-radius: 5px;
+    width: 200px;
+    font-size: 27.5px;
+    padding: 5px;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#profile_type_select, #state_select, #password_1, #password_2, #email{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#select_error_1, #select_error_2, #password_match_error, #password_error, #email_error{
+    margin-bottom:10px;
+    margin-top:10px;
+    font-size: 15px;
+    padding: 0px;
+    color: rgb(209, 206, 206);
+    line-height: 10px;
+}
+
+#form_error{
+    color: white;
+    font-size: 17.5px;
+    margin-bottom: 0px;
+}
+
+/* --------Grid Sections---------  */
+
+header{
+    grid-area: header;
+    text-align: center;
+    width: 100%;
+    background: black;
+    padding: 10px;
+}
+
+.athlete_info{
+    grid-area: athlete_info;
+    max-width: 875px;
+}
+
+.side_info{
+    grid-area: side_info;
+    max-width: 875px;
+}
+
+.posts{
+    grid-area: posts;
+    max-width: 875px;
+}
+
+footer{
+    width: 100%;
+    grid-area: footer;
+}
+
+
+
+/* ---------------Section Styling-------- */
+
+/* header section */
+
+.name{
+    margin: 20px auto;
+    margin-top: 0px;
+    text-align: center;
+}
+.name h3{
+    font-size: 50px;
+    color: whitesmoke;
+    text-shadow: silver 0px 0px 10px 10px;
+}
+
+.name h3 span{
+    color: rgb(10, 95, 252);
+}
+
+.name h4{
+    color: rgb(224, 222, 222);
+    font-size: 16.5px;
+}
+
+.search_bar_container{
+    display: flex;
+    width: 260px;
+    height: 30px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.search_bar_container button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    border-radius: 0px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    background-color: rgb(10, 95, 252);
+    cursor: pointer;
+    
+}
+
+.search_bar_container button img{
+    width: 17.5px;
+}
+
+#search_bar, .search_nav li{
+    width: 230px;
+    height: 30px;
+    margin: 0px auto;
+    text-align: left;
+    text-indent: 7.5px;
+    font-size: 15px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+#search_bar{
+    border: none;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    font-family: 'Oswald', sans-serif;
+}
+
+#search_bar::placeholder{
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.search_nav{
+    width: 260px;
+    text-align: left;
+    text-indent: 7.5px;
+    background-color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-top: 30px;
+    margin-right:auto;
+    margin-left:auto;
+    list-style-type: none;
+}
+
+.search_nav li, .search_nav li a{
+    width: 260px;
+    height: 30px;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.search_nav li a{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.search_nav li:last-child{
+    border-bottom: 1px solid black;
+}
+
+#highlighted_suggestion{
+    background-color: lightgray;
+}
+
+/* .search_nav li:hover{
+    background-color: rgb(170, 169, 169);
+} */
+
+.search_nav i{
+    margin-right: auto;
+    color: white;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.nav{
+    /* width: 460px; */
+    /* margin: 0px auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+#profile_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+#profile_nav img{
+    margin-right: 7.5px;
+}
+
+.nav a{
+    color: white;
+    font-size: 20px;
+}
+
+#header_profile_pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+
+
+.nav a:hover, .profile_nav:first-child:hover + .profile_nav:last-child{
+    color: rgb(10, 95, 252);
+}
+
+
+.result_link_div a{
+    color: rgb(76, 181, 247);
+}
+
+#back_to_portfolio{
+    margin: 2.5px auto;
+    display: inline-block;
+    background: greenyellow;
+    border-radius: 5px;
+    padding: 5px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 17.5px;
+    font-weight: bolder;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(107, 175, 4);
+    cursor: pointer;
+}
+/*-------------------athlete_info--------------------  */
+
+.athlete_info{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 95%;
+    margin: 0px auto;
+    margin-top: 25px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+    text-align: center;
+    padding: 7.5px;
+}
+
+.athlete_info h1{
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.bio{
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro_pic{
+    display: block;
+    width: 50%;
+    text-align: center;
+}
+
+.profile_pic{
+    height: 225px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
+}
+
+.stats{
+    width: 50%;
+    text-align: left;
+    padding-left: 7.5%;
+}
+
+.record_table{
+    text-align: center;
+}
+
+td{
+    padding: 10px;
+    border: 2px solid black;
+    font-weight: bolder;
+}
+
+th{
+    padding: 10px;
+    padding-bottom: 0px;
+    font-size: 18px;
+
+}
+
+#wins{
+    background: rgb(60, 231, 60);
+}
+
+#losses{
+    background: red;
+}
+
+.requests{
+    display: block;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+
+.requests button{
+    display: inline-block;
+    width: 45%;
+    color: whitesmoke;
+    background: rgb(76, 181, 247);
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+
+
+
+/* ******USER PROFILE************ */
+
+#add_post, #edit_profile_pic{
+    background: rgb(76, 181, 247);
+    display: block;
+    margin: 0px auto;
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    border-bottom: 2px solid rgb(7, 98, 155);
+    cursor: pointer;
+}
+
+#edit_info{
+    color:rgb(76, 181, 247);
+}
+
+
+/* *********BROWSE********************* */
+
+.browse{
+    max-width: 875px;
+    margin: 0px auto;
+    margin-top: 50px;
+}
+
+.browse h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+/*------------------side info----------------------------------  */
+
+.side_info{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 95%;
+    margin: 0px auto;
+    margin-top: 25px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.side_info h2{
+    padding-bottom: 15px;
+}
+
+
+
+/* -----------------------Coach------------------------------------  */
+
+
+.bio{
+    display: flex;
+    width: 98%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.athlete_gym{
+    color: rgb(76, 181, 247);
+}
+
+.coach_info a{
+    display: block;
+    margin: 0px auto; 
+    width: 50%;
+}
+
+.coach_info img{
+    display: block;
+    margin: 0px auto;
+    height: 195px;
+    width: 100%;
+    max-width: 550px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
+}
+
+.coach a{
+    display: block;
+    color: black;
+    padding-top: 5px;
+}
+
+
+
+
+
+
+/* -------------------------teammates------------------------------------- */
+.coaches, .gyms{
+    text-align: center;
+}
+
+.coaches_grid, .gyms_grid{
+    width: 95%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(110px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 5px;
+    padding-bottom: 15px;
+}
+
+#coaches_browse_title{
+    text-align: center;
+}
+
+.coaches_grid img, .gyms_grid img{
+    height: 175px;
+    width: 100%;
+    margin: 0px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px .5px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.coaches_grid a, .gyms_grid a{
+    display: block;
+    color: black;
+    padding-top: 5px;
+}
+
+.teammates, .coaches, .gyms{
+    margin-top: 40px;
+    text-align: center;    
+}
+
+.teammates_grid{
+    width: 95%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(110px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 5px;
+    padding-bottom: 15px;
+}
+
+.teammates_grid img{
+    height: 175px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px .5px rgba(0, 0, 0, 0.4);
+}
+
+.teammates_grid a{
+    display: block;
+    color: black;
+    padding-top: 5px;
+}
+
+
+
+/* --------------------------Athletes Posts------------------------------------  */
+
+.posts{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 95%;
+    margin: 0px auto;
+    margin-top: 25px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.athlete_posts{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(110px, 1fr));
+    grid-auto-rows: auto;
+    grid-gap: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.athlete_posts h4{
+    text-align: center;
+    margin: 0px auto;
+}
+
+.picture img{
+    height: 175px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px .5px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+/* ***************MODALS********************* */
+
+.modal_wrapper, .modal_image_preview, .modal_post_preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    opacity: 0;
+    pointer-events: none;
+}
+
+#enlarged_image{
+    width: 90%;
+    height: 70vh;
+    max-width: 675px;
+    max-height: 700px;
+}
+
+#close_image_x{
+    width: 30px;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.image_preview_background{
+    width: 70%;
+    height: 60vh;
+    max-width: 475px;
+    max-height: 450px;
+    background-color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.image_preview_background input{
+    padding-top: 30px;
+}
+
+#image_preview{
+    width: 60%;
+    height: 50%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: rgb(240, 236, 236);
+    color:black;
+}
+
+#image_preview img{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#change_confirmation{
+    margin-top: 10px;
+    background-color: rgb(76, 181, 247);
+    outline: none;
+    border: none;
+    padding: 5px;
+    color: whitesmoke;
+    border-radius: 5px;
+    border-bottom: 3px solid rgb(8, 121, 190);
+    cursor:pointer; 
+}
+
+#successful_change{
+    font-size: 15px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* ----------------------------search sections------------------------ */
+
+.search_section{
+    width: 400px;
+    background: rgb(219, 218, 218);
+    margin: 0px auto;
+    margin-top: 70px;
+    margin-bottom: -150px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 5px .5px rgba(0, 0, 0, 0.4);
+}
+
+.search_section h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+.search_section p{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.search_section h2{
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.search_section input{
+    height: 30px;
+    width: 175px;
+    border: solid 2px black;
+    border-radius: 5px;
+    text-indent: 5px;
+}
+
+.search_section select{
+    height: 30px;
+    width: 175px;
+    border: solid 2px black;
+    border-radius: 5px;
+    text-indent: 5px;
+}
+
+.search_section button{
+    margin: 0px auto;
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    background: rgb(76, 181, 247);
+    color: whitesmoke;
+    padding: 15px;
+    border: solid 2px black;
+    font-size: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px .25px rgba(0, 0, 0, 0.4);
+}
+
+
+/* --------------------------------footer---------------------------  */
+
+footer{
+    width: 100%;
+    display: grid;
+    color: whitesmoke;
+    text-align: center;
+    background: black;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+footer span{
+    color: rgb(10, 95, 252);
+}
+
+footer h3{
+    font-size: 35px;
+    margin-bottom: -20px;
+}
+
+footer h4{
+    padding-top: 10px;
+    font-size: 12.5px;
+    padding-bottom: 15px;
+}
+
+footer a{
+    color: whitesmoke;
+    padding: 2.5px;
+    font-size: 18.5px;
+}
+
+

@@ -1,0 +1,874 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.everything_but_footer{
+    margin-bottom: auto;
+    min-height: calc(100vh - 190px);
+}
+
+/* *************LANDING PAGE*************** */
+
+.main_nav{
+    background: black;
+}
+
+.main_nav_mobile{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5.5%;
+    padding-bottom: 0px;
+    height: 80px;
+}
+
+.logo{
+    display: flex;
+    align-self: center;
+}
+
+.logo img{
+    width: 65px;
+}
+
+.mobile_menu_dropdown{
+    cursor: pointer;
+}
+
+.nav_menu_div{
+    display: flex;
+    align-self: center;
+}
+
+.nav_menu_div img{
+    width: 40px;
+    height: 40px;
+}
+
+.main_nav ul{
+    width: 100%;
+    margin: 0px auto;
+    background: rgb(9, 146, 170);
+    text-align: center;
+    display: none;
+    background: black;
+}
+
+.main_nav ul li{
+    display: block;
+    width: 55%;
+    min-width: 285px;
+    margin: 0px auto;
+    text-align: left;
+    line-height: 40px;
+    background: rgb(21, 198, 211);
+    font-size: 30px;
+    padding: 0px;
+}
+
+.main_nav ul li:first-child{
+    border-top: none;
+}
+.main_nav ul li:last-child{
+    border-bottom: none;
+}
+
+.dropdown_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown_flex #dropdown_link{
+    display: inline-block;
+    width: auto;
+    margin-right: 15px;
+}
+
+.dropdown_flex #dropdown_link2{
+    display:inline-block;
+    width: auto;
+}
+
+#down_arrow, #down_arrow:nth-child(3){
+    width: 25px;
+    height: 15px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+#down_arrow:nth-child(2){
+    width: 20px;
+    height: 10px;
+    cursor: pointer;
+}
+
+.right_arrow{
+    display: none;
+}
+
+.main_nav ul .nav_link:first-child{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.main_nav ul .nav_link:last-child{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.main_nav ul li a{
+    width: 100%;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0px;
+    padding-left: 20px;
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+#about_sub_menu, #portfolio_sub_menu{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background: rgb(5, 157, 168);
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#about_sub_menu li, #portfolio_sub_menu li{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 100%;
+    background: rgb(5, 157, 168);
+    padding: 0px;
+    margin: 0px;
+}
+
+#about_sub_menu li a, #portfolio_sub_menu li a{
+    background: rgb(5, 157, 168);
+    width: 100%;
+    font-size: 22.5px;
+}
+
+#about_sub_menu .sub_menu2{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    background: rgb(2, 59, 63);
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#about_sub_menu .sub_menu2 li{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border: none;
+    width: 100%;
+    background: rgb(2, 59, 63);
+    padding: 0px;
+}
+
+#about_sub_menu .sub_menu2 li a{
+    background: rgb(2, 59, 63); 
+    font-size: 20px;
+}
+
+.main_body{
+    padding: 75px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(180deg, black, transparent 5%), linear-gradient(0deg, black, transparent 275%), url(/images/stars.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main_body img{
+    width: 275px;
+    height: 300px;
+    border-radius: 100%;
+    border: 3px solid whitesmoke;
+}
+
+.main_body h1{
+    color: whitesmoke;
+    font-size: 47.5px;
+    text-shadow: 1px 1px 5px 5px black;
+    margin: 20px;
+}
+
+.main_body p{
+    margin-top: -5px;
+    color: whitesmoke;
+    font-size: 22.5px;
+    text-shadow: 1px 1px 5px 5px black;
+    text-transform: capitalize;
+    width: 475px;
+}
+
+.main_footer{
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5.5%;
+    height: 110px;
+}
+
+.footer_signature img{
+    width: 175px;
+    margin-bottom: -5px;
+}
+
+.footer_signature h2{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 12.5px;
+    margin: 0px;
+    padding: 2px;
+}
+
+.social_media{
+    display: flex;
+    align-items: center;
+}
+
+.social_media a{
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.linkedin{
+    width: 50px;
+}
+.github{
+    width: 50px;
+}
+
+/* ------MEDIA------ */
+
+@media screen and (min-width: 667.5px) {
+    .main_nav{
+        background: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5.5%;
+        height: 80px;
+    }
+    
+    .main_nav_mobile{
+        padding: 0px;
+    }
+
+    .logo img{
+        margin-bottom: -10px;
+    }
+
+    .dropdown_flex img{
+        display: none;
+        visibility: hidden;
+        margin: 0px;
+    }
+
+    .dropdown_flex #dropdown_link{
+        margin-right: 0px;
+    }
+
+    .right_arrow{
+        width: 14px;
+    }
+    
+    .main_nav ul{
+        background: black;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .main_nav ul li{
+        margin-bottom: -5px;
+    }
+
+    .main_nav ul .nav_link, .main_nav ul li a{
+        display: inline-flex;
+        width: 100%;
+        min-width: unset;
+        align-self: center;
+        text-align: center;
+        justify-self: center;
+        line-height: 40px;
+        background: black;
+        font-size: 25px;
+    }
+
+    .main_nav ul li{
+        padding: 0px 8px;
+    }
+
+    .main_nav ul li:first-child, .main_nav ul li a:first-child{
+        padding-left: 0px;
+    }
+
+    .main_nav ul .nav_link:first-child, .main_nav ul .nav_link:last-child{
+        padding-left: 8px;
+        border-radius: 0px;
+    }
+
+
+    #about_sub_menu, #portfolio_sub_menu{
+        position: absolute;
+        top: 62.5px; 
+        margin-left: -5px;
+        display: none;
+    }
+
+    .about_select_submenu{
+        position: relative;
+    }
+
+    #about_sub_menu .sub_menu2{
+        position: absolute;
+        top: 30px;
+        line-height: 40px;
+        left: 199px;
+        display: none;
+        width: 75px;
+        height: 60px;
+        min-width: unset;
+    }
+
+    #about_sub_menu{
+        width: 199px;
+    }
+
+    #portfolio_sub_menu{
+        width: 170px;
+    }
+
+    #about_sub_menu li, #portfolio_sub_menu li{
+        line-height: 30px;
+        margin: 0px;
+        padding-left: 5px;
+        padding: 0px;
+        background: rgb(54, 214, 139);
+        min-width: unset;
+    }
+
+    #about_sub_menu li:last-child a{
+        width: 100%
+    }
+
+    #about_select:hover  #about_sub_menu, #portfolio_select:hover  #portfolio_sub_menu{
+        display: block;
+    }
+
+    #about_select #about_sub_menu .about_select_submenu:hover .sub_menu2{
+        display: flex;
+    }
+
+    .main_nav ul #dropdown_link:nth-child(2):hover + #about_sub_menu, .main_nav ul #dropdown_link:nth-child(3) + #portfolio_sub_menu{
+        display: block;
+    }
+
+    #about_sub_menu li a:hover, #portfolio_sub_menu li a:hover, #about_sub_menu li:hover, #portfolio_sub_menu li:hover, #about_sub_menu .sub_menu2 li a:hover{
+        background: rgb(3, 92, 99);
+    }
+
+    #about_sub_menu .sub_menu2 li,#about_sub_menu .sub_menu2 li a{
+        background: rgb(8, 165, 152);
+        font-size: 17.5px;
+    }
+
+    #about_sub_menu li a, #portfolio_sub_menu li a{
+        font-size: 17.5px;
+        padding-left: 5px;
+        background: rgb(54, 214, 139);
+    }
+
+    #about_sub_menu li .dropdown_flex a{
+        text-align: left;
+    }
+    
+    .nav_menu_div{
+        display: none;
+    }
+
+    #active, .active{
+        box-shadow: 0 3.5px 1px -2px rgb(154, 226, 8);
+    }
+
+    .nav_link_highlight:hover{
+        color: rgb(154, 226, 8);
+    }
+
+    .contact_body{
+        height: calc(100vh - 110px - 80px);
+    }
+}
+    
+
+@media screen and (min-width: 700px) {
+    .nav_links a{
+        font-size: 24px;
+        margin: 0px 20px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .nav_links a{
+        font-size: 27.5px;
+        margin: 0px 35px;
+    }
+}
+
+/* ****************ABOUT************************ */
+
+.about_title{
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.about_body_wrapper{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 70px;
+    background-image: linear-gradient(180deg, black, transparent 5%),linear-gradient(0deg, black, transparent 275%), url(/images/stars.JPG);
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.about_body{
+    width: 87.5%;
+    max-width: 900px;
+    margin: auto;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.about_body p{
+    color: white;
+    text-indent: 40px;
+    font-size: 25px;
+    margin: 20px auto;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.about_links{
+    width: 87.5%;
+    margin: auto;
+}
+
+#my_story, #soccer, #boxing, #drawing{
+    display: inline-block;
+    width: 265px;
+    margin: 10px;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 22.5px;
+    text-decoration: none;
+    padding: 10px;
+    text-shadow: none;
+}
+
+#my_story{
+    background: blue;
+    width: 380px;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    border-bottom: rgb(3, 3, 139) 4px solid;
+    border-radius: 10px;
+}
+
+#soccer{
+    background: rgb(187, 22, 209);
+    border-bottom: rgb(128, 5, 145) 3px solid;
+    border-radius: 10px;
+}
+
+#boxing{
+    background: red;
+    border-bottom: rgb(161, 4, 4) 3px solid;
+    border-radius: 10px;
+}
+
+#drawing{
+    background: orange;
+    border-bottom: rgb(179, 117, 2) 3px solid;
+    border-radius: 10px;
+}
+
+#my_story:hover, #soccer:hover, #boxing:hover, #drawing:hover{
+    transform: scale(1.015);
+}
+
+#my_story:active, #soccer:active, #boxing:active, #drawing:active{
+    transform: scale(.98);
+}
+
+
+/* **********ABOUT - SOCCER *************** */
+
+.arsenal_intro{
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(180deg, black, transparent 5%),linear-gradient(0deg, black, transparent 275%), url(/images/stars.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40px;
+    margin: 0px auto;
+    margin-bottom: 0px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.arsenal_title{
+    font-size: 40px;
+    width: 87.5%;
+    margin: 0px auto;
+}
+
+.arsenal_intro h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.arsenal_intro p{
+    width: 87.5%;
+    text-align: left;
+    text-indent: 30px;
+    font-size: 25px;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+#mouse_over_notice{
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* **********ABOUT - BOXING****************** */
+
+.boxing_body{
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    background: rgb(124, 124, 124);
+    background-image: linear-gradient(180deg, black, transparent 5%),linear-gradient(0deg, black, transparent 275%), url(/images/stars.JPG);
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.boxing_title{
+    font-size: 40px;
+    margin-top: 40px;
+    color: whitesmoke;
+}
+
+.boxing_body p{
+    font-size: 25px;
+    text-align: left;
+    text-indent: 30px;
+    margin: 40px auto;
+    width: 87.5%;
+    max-width: 900px;
+    color: whitesmoke;
+}
+
+#boxing_favorites{
+    text-align: center;
+}
+
+.boxer{
+    width: 95%;
+    max-width: 950px;
+    background: rgb(61, 60, 60);
+    color: whitesmoke;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.boxer_name{
+    font-size: 30px;
+    color: rgb(154, 226, 8);
+}
+
+.boxer p{
+    width: 97.5%;
+    font-size: 20px;
+    margin: 20px auto;
+    text-align: left;
+    text-indent: 30px;
+}
+
+.boxer iframe{
+    width: 97.5%;
+}
+
+/* **************ABOUT-DRAWING***************** */
+
+.drawing_body{
+    text-align: center;
+    width: 100%;
+    margin: 0px auto;
+    background-image: linear-gradient(180deg, black, transparent 5%),linear-gradient(0deg, black, transparent 275%), url(/images/stars.JPG);
+    background-position: center;
+    background-size: cover;
+    color: whitesmoke;
+}
+
+.drawing_title{
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.joker{
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 70%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.drawing_body p{
+    width: 87.5%;
+    font-size: 25px;
+    text-align: left;
+    text-indent: 30px;
+    margin: 17.50px auto;
+    max-width: 900px;
+}
+
+
+/* **********ABOUT - WEB DEV STORY********** */
+
+.story_title{
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+
+#data_title{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 42.5px;
+    text-decoration: underline;
+}
+
+#initial_data_link{
+    color: rgb(134, 201, 9);
+    text-transform: capitalize;
+}
+
+#data_science_projects{
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+#data_science_projects li{
+    text-align: left;
+    list-style-type: disc;
+    font-size: 17.5px;
+}
+
+#data_science_projects h2{
+    margin: 10px;
+    font-size: 30px;
+}
+
+#data_project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    width: 180px;
+    height: 45px;
+    margin: 15px auto;
+    background: grey;
+    padding: 15px;
+    border-bottom: rgb(56, 56, 56) 2.5px solid;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 5px;
+}
+
+#data_project:hover{
+    transform: scale(1.015);
+}
+
+#data_project:active{
+    transform:scale(.98);
+}
+
+/* **************Portfolio*********************** */
+
+.portfolio_body{
+    background-image: linear-gradient(180deg, black, transparent 5%),linear-gradient(0deg, black, transparent 275%), url(/images/stars.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio_title{
+    margin-top: 40px;
+    font-size: 40px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.project{
+    width: 87.5%;
+    max-width: 700px;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.project h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.project_flex{
+    display: block;
+}
+
+.project_description p{
+    text-indent: 10px;
+    width: 100%;
+    max-width: 625px;
+    margin: 0px auto;
+    font-size: 22.5px;
+    padding: 17.5px 5px;
+}
+
+.project_links{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#project_result, #project_code{
+    display: inline-block;
+    text-align: center;
+    font-size: 17.5px;
+    text-decoration: none;
+    padding: 7.5px;
+    border-radius: 10px;
+}
+
+#project_result{
+    margin-bottom: 10px;
+    background: rgb(223, 66, 223);
+    border-bottom: 3px solid rgb(145, 8, 145);   
+    color: whitesmoke;
+}
+
+#project_code{
+    margin-bottom: 10px;
+    background: rgb(70, 123, 236);
+    border-bottom: 3px solid rgb(8, 62, 177);   
+    color: whitesmoke;
+}
+
+.project_image{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.project_image img{
+    width: 100%;
+    max-width: 515px;
+    margin: 0px auto;
+    height: 455px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+}
+
+/* **********CONTACT******************** */
+
+.contact_body{
+    display: flex;
+    height: calc(100vh - 110px - 80px);
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(180deg, black, transparent 5%), linear-gradient(0deg, black, transparent 275%), url(/images/stars.JPG);
+    background-position: center;
+    background-size: cover;
+}
+
+.contact_body h1{
+    font-size: 35px;
+    width: 96.5%;
+    max-width: 600px;
+    margin: 0px auto;
+    margin-top: -60px;
+    margin-bottom: 40px;
+    color: whitesmoke;
+}
+
+.contact_table{
+    width: 90%;
+    padding: 5px;
+    max-width: 600px;
+    margin: 0px auto;
+    background: rgb(75, 102, 92);
+    color: whitesmoke;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.contact_table td{
+    text-align: left;
+    padding: 10px;
+}
+
+.contact_table td a{
+    color: whitesmoke;
+}
+

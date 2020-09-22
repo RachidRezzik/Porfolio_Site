@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 1em/1.5 'Open Sans', sans-serif;
+}
+
+/* -----------Individual Elements--------------- */
+
+.arsenal_logo{
+    height: 300px;
+    width: 350px;
+}
+
+.player{
+    width: 85%;
+    max-width: 450px;
+    margin: 0px auto;
+    position: relative;
+    line-height: 0;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.flag{
+    width: 100%;
+    position: relative;
+    line-height: 0;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.player_img{
+    width: 100%;
+    height: 325px;
+    border-radius: 10px;
+}
+
+.photo_overlay h3{
+    font-size: 30px;
+    margin: 20px;
+}
+
+.flag_img{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.photo_overlay p{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.highlights{
+    font-size: 35px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(45, 45, 245);
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 5px;
+    opacity: 0;
+}
+
+
+.player_role{
+    color: white;
+    text-shadow: 1px 1px 10px 10px;
+    font-size: 70px;
+    text-shadow: 2px 2px 10px black;
+    margin: 20px;
+    text-transform: uppercase;
+}
+
+#strikers{
+    padding-top: 25px;
+}
+
+#jens{
+    padding-bottom: 25px;
+}
+
+/* -------------------Overlays----------------- */
+
+.photo_overlay{
+    color: white;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 10px;
+    backface-visibility: hidden;
+}
+
+.flag .photo_overlay2{
+    color: white;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    background: lightskyblue;
+    border-radius: 5px;
+    backface-visibility: hidden;
+} 
+
+
+/* --------------Containers------------- */
+
+.player_container{
+    text-align: center;
+    margin: 5px auto;
+    margin-bottom: 70px;
+    width: 80%;
+}
+
+.flag_container{
+    text-align: center;
+    width: 40%;
+    margin: 30px auto;
+}
+
+
+/* -----------Layout---------------------- */
+
+.main-header{
+    text-align: center;
+    padding: 20px;
+}
+
+.players_section{
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    background-image: url('/images/grass.jpg');
+}
+
+/*-----------Transitions------------------ */
+
+/* player image */
+
+.arsenal_logo:hover{
+    transition: transform 1.5s ease-in-out;
+    transform: rotate(-360deg);
+}
+
+.photo_overlay{
+    transition: opacity 1s linear;
+}
+
+.highlights:hover{
+    transform: scale(1.02);
+}
+
+.photo_overlay:hover, .photo_overlay:hover .stats, .photo_overlay:hover .highlights{
+    opacity: 1;
+}
+
+.player{
+    transition: transform  1s linear;
+}
+
+.player:hover{
+    transform: scale(1.05);
+}
+
+/* player nationality */
+
+.flag_container{
+    perspective: 900px;
+}
+
+.flag{
+    transition: transform 1s cubic-bezier(.55, -.62, .27, 1.2);
+}
+.photo_overlay2{
+    transition: transform 1s cubic-bezier(.55, -.62, .27, 1.2);
+}
+
+.flag_img{
+    transform: rotateX(180deg);
+}
+
+.flag:hover, .flag:hover .photo_overlay2{
+    transform: rotateX(180deg);
+}
+
+.photo_overlay2{
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+/* --------------Media Queries------------------ */
+
+@media (min-width: 769px){
+    .row1, .row2, .row3{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .player_container{
+        float: left;
+        width: 50%;
+        padding: 20px;
+    }
+
+    #jens{
+        float: none;
+        /* padding-bottom: 10px; */
+    }
+
+    .players_section{
+        width: 100%;
+        text-align: center;
+        background-image: url(/images/grass.jpg);
+    }
+
+    .player_img{
+        height: 350px;
+    }
+
+    .flag_container{
+        width: 50%;
+    }
+    .flag_img{
+        height: 80px
+    }
+
+    .nationality{
+        font-size: 20px;
+    }
+
+    .photo_overlay h3{
+        font-size: 25px;
+    }
+
+    .photo_overlay p{
+        font-size: 17.5px;
+    }
+
+    .stats{
+        font-size: 25px;
+    }
+
+    .highlights{
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1200px){
+    .row1, .row2, .row3{
+        width: 97.5%;
+        margin: 0 auto;
+    }
+
+    .row1{
+        display: block;
+        margin: 0px auto;
+    }
+
+    .row1 .player_container{
+        display: inline-block;
+        float: none;
+    }
+    
+    .row1::after{
+        content: " ";
+		display: table;
+		clear: both;
+    }
+    
+    .player_container{
+        width: 25%;
+        padding: 10px;
+    }
+
+    .players_section{
+        width: 100%;
+        text-align: center;
+        background-image: url(/images/grass.jpg);
+    }
+
+    .player_img{
+        height: 300px;
+    }
+
+    .flag_container{
+        width: 60%;
+    }
+    .flag_img{
+        height: 70px
+    }
+
+    .nationality{
+        font-size: 15px;
+    }
+}

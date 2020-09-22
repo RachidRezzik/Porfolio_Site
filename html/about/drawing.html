@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rachid Rezzik: Front-End Developer</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gayathri&family=Lato&family=Poppins&family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main_nav">
+        <div class="main_nav_mobile">
+            <div class="logo">
+                <a href="/html/landing.html">
+                    <img src="/images/rachid_logo.JPG" alt="">
+                </a>
+            </div>
+            <div class="nav_menu_div">
+                <img class='mobile_menu_dropdown' src="/images/nav_menu.png" alt="">
+            </div>
+        </div>
+        <div>
+            <ul class="nav_menu">
+                <li class="nav_link">
+                    <a class="nav_link_highlight" href="/html/landing.html">HOME</a>
+                </li>
+                <li class="nav_link active" id="about_select">
+                    <div class="dropdown_flex">
+                        <a id='dropdown_link' class="nav_link_highlight" href="/html/about/about.html">ABOUT</a> 
+                        <img id= 'down_arrow' src="/images/down_arrow.png" alt="">
+                    </div>
+                    <ul class="sub_menu" id="about_sub_menu">
+                        <li>
+                            <a href="/html/about/story_goals.html">Web Dev. Story & Goals
+                            </a >
+                        </li>
+                        <li class="about_select_submenu">
+                            <div class="dropdown_flex">
+                                <a id='dropdown_link2' href="">My Passions/Hobbies <img class="right_arrow" src="../images/right_arrow.png" alt=""></a>
+                                <img id= 'down_arrow' src="/images/down_arrow.png" alt="">
+                            </div>
+                            <ul class="sub_menu2">
+                                <li>
+                                    <a href="/html/about/soccer.html">Soccer</a>
+                                </li>
+                                <li>
+                                    <a href="/html/about/boxing.html">Boxing</a>
+                                </li>
+                                <li>
+                                    <a href="/html/about/drawing.html">Drawing</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_link" id="portfolio_select">
+                    <div class="dropdown_flex">
+                        <a id="dropdown_link" class="nav_link_highlight" href="/html/portfolio/portfolio.html">PORTFOLIO</a>                    
+                        <img id= 'down_arrow' src="/images/down_arrow.png" alt="">
+                    </div>
+                    <ul class="sub_menu" id="portfolio_sub_menu">
+                        <li>
+                            <a href="/html/portfolio/god_jam/landing.html">God Jam!!! Store
+                            </a >
+                        </li>
+                        <li>
+                            <a href="/html/portfolio/texas_homes/landing.html">Search Homes</a>
+                        </li>
+                        <li>
+                            <a href="/html/portfolio/texas_homes/landing.html">Boxing Social Media</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_link">
+                    <a class="nav_link_highlight" href="/html/contact.html">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="drawing_body">
+        <h1 class="drawing_title">
+            Drawing
+        </h1>
+        <img src="/images/joker.JPG" class='joker' alt="">
+        <h3><i> Joker: As played by Joaquin Pheonix </i></h3>
+        <p>Ever since I was young, drawing has been a pleasure. I enjoy the aspect of starting from nothing, building, making and fixing mistakes, and finally landing on a final product.</p>
+        <p>I've found myself using this same general process with Web Development. The building stage is filled with progress and a few setbacks, but with some effort and creative thinking the final product can be something one can be proud of.</p>
+    </section>
+    <section class="main_footer">
+        <div class="footer_signature">
+            <img src="/images/footer_signature.JPG" alt="">
+            <h2 id="email">Email: Rachid.Rezzik@hotmail.com</h2>
+            <h2>Phone: 832-368-0908</h2>
+        </div>
+        <div class="social_media">
+            <a href="https://github.com/RachidRezzik">
+                <img class="github" src="/images/github.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/rachid-rezzik-62629858/">
+                <img class="linkedin" src="/images/linkedin.png" alt="">
+            </a>
+        </div>
+    </section>
+    <script src="/JS/script.js"></script>
+</body>
+</html>
