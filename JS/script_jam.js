@@ -94,32 +94,6 @@ if ( document.URL.includes("landing.html") ) {
 
 
 
-
-// **************DROPDOWN ARROW FOR STORE NAV************
-
-const dropdown_arrow = document.getElementsByClassName('dropdown_arrow')
-const dropdown_custom_request = document.querySelector('.store_dropdown ul')
-
-dropdown_arrow[0].addEventListener('click', () => {
-    if(dropdown_custom_request.style.opacity == 0){
-        dropdown_custom_request.style.opacity = 1
-        dropdown_custom_request.style.pointerEvents = 'all'
-    } else if(dropdown_custom_request.style.opacity == 1) {
-        dropdown_custom_request.style.opacity = 0
-        dropdown_custom_request.style.pointerEvents = 'none'
-    }
-})
-
-document.addEventListener('click', function(event) {
-    if (event.target != dropdown_custom_request && event.target != dropdown_arrow[0]) {
-        dropdown_custom_request.style.opacity = 0
-        dropdown_custom_request.style.pointerEvents = 'none'    
-    }
-});
-
-
-
-
 // ******************ADD TO CART****************
 
 if (document.URL.includes('store.html')) {

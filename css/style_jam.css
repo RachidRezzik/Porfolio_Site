@@ -31,7 +31,7 @@ body{
     margin: 0px auto;
     text-align: center;
     width: 100%;
-    height: 175px;
+    height: 110px;
     background-image: linear-gradient(0deg, white, transparent 70%), url(/images/god_jam/header_background.JPG);
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,7 +39,7 @@ body{
 
 .main_header h3{
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     padding-top: 20px;
 }
 
@@ -47,26 +47,49 @@ body{
     text-decoration: none;
 }
 
+#cart_number_total{
+    margin-right: -10px;
+}
+
 .checkout{
-    height: 33.5px;
-    width: 37.5px;
-    margin-bottom: -10.5px;
-    margin-right: 15px;
+    width: 20.5px;
+    height: 30.5px;
+    margin-bottom: -7.5px;
+    margin-right: -7.5px;
+}
+
+.checkout_total{
+    display: inline-block;
+    font-size: 12.5px;
+    justify-self: center;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    text-indent: -0.5px;
+    border-radius: 100%;
+    color: white;
+    position: relative;
+    background: red;
+    top: -12.5px;
+    right: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
 }
 
 .logo_header{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
+    font-size: 24px;
     color: rgb(82, 138, 241);
     font-family: Impact;
     text-shadow: 3.5px 3.5px black;
 }
 
 .logo_header img{
-    height: 90px;
-    width: 90px;
+    height: 65px;
+    width: 65px;
     padding: 2.5px;
 }
 
@@ -81,7 +104,8 @@ body{
 .main_nav{
     display: flex;
     flex-direction: row;
-    width: 450px;
+    width: 99%;
+    max-width: 325px;
     height: 50px;
     margin: 0px auto;
     justify-content: space-evenly;
@@ -91,6 +115,7 @@ body{
     border-bottom: 2px solid rgba(0, 0, 0, 0.116);
     border-radius: 10px;
     margin-bottom: 2.5px;
+    overflow: hidden;
 }
 
 .main_nav div {
@@ -99,84 +124,17 @@ body{
 
 .main_nav a{
     display: inline-block;
-    font-size: 22.5px;
+    font-size: 17.5px;
     text-decoration: none;
-    padding: 0px 12px;
+    padding: 0px 2.5px;
     color: rgb(10, 103, 160);
     font-weight: bolder;
 }
 
 .home_img{
-    width: 25px;
-    margin-left: -12.5px;
-    margin-bottom: -10px;
-}
-
-.main_nav .underline{
-    text-decoration: underline;
-    text-underline-position: under;
-}
-
-.store_container{
-    display: flex;
-    align-items: center;
-}
-
-.store_dropdown{
-    position: relative;
-}
-
-.store_dropdown ul{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    justify-content: space-around;
-    position: absolute;
-    list-style: square;
-    top: 43.75px;
-    width: 250px;
-    background: darkcyan;
-    border-bottom: 2px solid black;
-    border-radius: 5px;
-    margin: 0px auto;
-    text-align: center;
-    opacity: 0;
-    pointer-events: none;
-    transition: all ease;
-}
-
-.store_dropdown ul .dropdown_item{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    color: whitesmoke;
-    font-size: 17.5px;
-}
-
-.store_dropdown ul a{
-    border-bottom: 1px rgb(187, 184, 184) solid;
-}
-
-.store_dropdown ul a:hover{
-    background-color: rgb(4, 107, 107);
-}
-
-#last_store_dropdown{
-    border-bottom: none;
-}
-
-.dropdown_arrow{
-    display: flex;
-    color: rgb(10, 103, 160);
-    margin-left: -2.5px;
-    margin-right: 7px;
-    cursor: pointer;
-    transition: 0.1s ease-in-out;
     width: 17.5px;
-}
-
-.dropdown_arrow:active{
-    transform: scale(.985);
+    height: 27.5px;
+    margin-bottom: -5px;
 }
 
 #back_to_portfolio{
@@ -205,7 +163,7 @@ body{
     padding-bottom: 10px;
     text-indent: 25px;
     width: 97.5%;
-    max-width: 650px;
+    max-width: 550px;
     margin: 0px auto;
     margin-bottom: 17.5px;
     text-align: left;
@@ -237,7 +195,7 @@ body{
 .send_us_pictures{
     width: 97.5%;
     max-width: 650px;
-    font-size: 15px;
+    font-size: 12.5px;
     text-align: center;
     margin: 0px auto;
 }
@@ -246,7 +204,7 @@ body{
     margin: 20px auto;
     margin-top: 5px;
     width: 92.5%;
-    max-width: 600px;
+    max-width: 550px;
     height: 300px;
     border-radius: 10px;
     cursor: pointer;
@@ -269,7 +227,9 @@ body{
 }
 
 .thumbnail_container{
-    margin: auto;
+    width: 90%;
+    max-width: 525px;
+    margin: 0px auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,7 +237,7 @@ body{
 }
 
 .scroll_arrow{
-    width: 35px;
+    width: 30px;
     cursor: pointer;
 }
 
@@ -286,10 +246,10 @@ body{
 }
 
 .thumbnail{
-    width: 120px;
-    height: 120px;
+    width: 21.5%;
+    height: 90px;
     cursor: pointer;
-    margin: 0px 10px;
+    margin: 0px 5px;
     border-radius: 10px;
     transition: 0.25s ease-in-out;
     opacity: .35;
@@ -322,103 +282,33 @@ main h1{
 /* -----SHOP OUR PRODUCTS----------- */
 
 .store{
-    width: 475px;
+    width: 98%;
+    max-width: 475px;
     margin: 60px auto;
     margin-bottom: 0px;
     background: lightgrey;
     border-radius: 15px;
-}
-
-.store_flex{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    padding-bottom: 0px;
-    padding: 10px;
-    padding-right: 5px;
-}
-
-.shop_our_title{
-    font-size: 25px;
-    padding: 10px;
     text-align: center;
+    padding: 10px 0px;
 }
 
-
-.store_section1{
-    width: 42.5%;
-    padding: 5px;
-    padding-top: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
-.store_section2{
-    width: 57.5%;
-    padding: 5px;
-    padding-top: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-}
-
-.store_section1 img{
-    height: 175px;
-    width: 175px;
-    border-radius: 10px;
-    text-align: center;
-    margin: 0px auto;
-}
-
-.store_section1 h2{
-    font-size: 20px;
-    margin: 4.5px auto;
-}
-
-.store_navigation{
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0px auto;
-    flex-direction: row;
-    align-items: center;
-    padding-right: 15px;
-    padding-bottom: 40px;
-    margin-top: -12.5px;
-}
-
-.cust_fav_jam{
-    display: block;
-    padding: 5px;
-    width: 175px;
-    font-size: 20.5px;
-    text-align: center;
-    margin-top: -2px;
-    margin-bottom: 0px; 
-    text-decoration: none;
-    background: rgb(223, 83, 83);
-    color: white;
-    box-shadow: 0 3px 0 0 rgb(206, 5, 5);
+.store img{
+    width: 250px;
+    height: 225px;
     border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    transition: 0.1s ease-in-out;
+    margin: 5px auto;
+    text-align: center;
 }
 
-.cust_fav_jam:active{
-    transform: scale(.98);
-}
-
-.store_section2 p {
-    font-size: 20.5px;
+.store p{
     text-align: left;
-    text-indent: 20px;
-    padding-left: 17.5px;
+    text-indent: 10px;
+    width: 95%;
+    margin: 0px auto;
+    font-size: 17.5px;
 }
 
-.go_to_store, .custom_jam_request{
+.go_to_store{
     display: block;
     padding: 5px;
     font-size: 20.5px;
@@ -437,17 +327,12 @@ main h1{
     transition: 0.1s ease-in-out;
 }
 
-.go_to_store:active, .custom_jam_request:active{
-    transform: scale(.98);
-}
-
 .custom_jam_request{
     display: block;
     text-align: center;
     padding: 5px;
     font-size: 20.5px;
     margin: 19.5px auto;
-    margin-bottom: -2.5px; 
     text-decoration: none;
     background: rgb(113, 226, 162);
     color: white;
@@ -459,14 +344,15 @@ main h1{
     width: 205px;
 }
 
-
-.store_section a{
-    text-decoration: none;
+.go_to_store:active, .custom_jam_request:active{
+    transform: scale(.98);
 }
 
 /* ------TESTIMONIALS-------- */
 
 .check_out_testimonials{
+    width: 97.5%;
+    max-width: 500px;
     margin: 50px auto;
     margin-bottom: 0px;
     font-size: 30px;
@@ -475,18 +361,25 @@ main h1{
 
 .testimonials{
     padding-top: 50px;
+    width: 98%;
     margin: 0px auto;
     text-align: center;
 }
 
 .testimonials div{
     float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding: 20px 50px 50px 50px;
+    padding: 20px 0px;
+    margin: 0px auto;
 }
 
 .testimonials div p{
-    width: 390px;
+    width: 95%;
+    max-width: 400px;
     margin: 0px auto;
     font-size: 17.5px;
 }
@@ -496,8 +389,10 @@ main h1{
 }
 
 .testimonials div img{
-    height: 275px;
-    width: 275px;
+    height: 255px;
+    width: 255px;
+    margin: 0px auto;
+    text-align: center;
     border-radius: 100%;
 }
 
@@ -542,112 +437,50 @@ main h1{
 /* ----------FOOTER------------------------------------------------ */
 
 .main_footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     color: white;
     background: rgb(59, 59, 59);
-    padding: 20px 5%;
     text-align: center;
-}
-
-.main_footer a{
-    text-decoration: none;
-    font-weight: bolder;
-}
-
-.footer1{
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.footer2{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-.logo_footer{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: rgb(82, 138, 241);
-    text-shadow: 2.25px 2.25px black;
-    font-family: Impact;
-    font-size: 17.5px;
-}
-
-
-.logo_footer img{
-    height: 37.5px;
-    width: 47.5px;
-}
-
-.main_footer h3{
-    display: block;
-    font-size: 12.5px;
-    color: white;
-    text-align: center;
-    margin-top: -3.5px;
-}
-
-.logo_top{
-    display: inline-block;
-}
-
-.main_nav_footer{
-    display: block;
-}
-
-.main_nav_footer a{
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
-.main_nav_footer{
-    padding-bottom: 10px;
-}
-
-.social_media{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 8.5px;
-    text-align: right;
-}
-
-.social_media h2{
-    display: inline-block;
-}
-
-.social_media img{
-    display: inline-block;
-    height: 25px;
-    width: 25px;
-    margin: 5px;
 }
 
 .main_footer h4{
-    margin-top: 45px;
-    font-size: 5px;
+    padding: 7.5px;
+    font-size: 10px;
 }
 
-.rights_reserved{
-    background: rgb(59, 59, 59);
-    text-align: center;
-    color: white;
+.main_nav_footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
     font-size: 12.5px;
-    padding-bottom: 7.5px;
-    font-weight: lighter;
 }
 
+.main_nav_footer a{
+    color: white;
+    padding: 7.5px;
+    font-size: 17.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
 
+.social_media{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 7.5px;
+}
+
+.social_media h2{
+    font-size: 15px;
+}
+
+.social_media img{
+    width: 25px;
+    padding-left: 5px;
+}
 
 
 /* ***********************ABOUT.HTML************************** */
