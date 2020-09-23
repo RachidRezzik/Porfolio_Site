@@ -99,7 +99,6 @@ if ( document.URL.includes("landing.html") ) {
 if (document.URL.includes('store.html')) {
 
 }
-
 const add_cart_buttons = document.querySelectorAll('.add_button')
 const jam_divs = document.querySelectorAll('.jam')
 const cart = document.querySelector('.checkout_total')
@@ -245,6 +244,7 @@ for (let i=0; i<add_cart_buttons.length; i++) {
         } 
     }   
 )}
+
 
 
 // ******************CUSTOM JAM REQUEST****************
