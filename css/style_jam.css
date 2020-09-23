@@ -715,7 +715,7 @@ repeat(2, minmax(auto, 1fr)) */
     background: lightgrey;
     border: 1px solid black;
     border-radius: 10px;
-    padding: 5px;
+    padding: 2%;
 }
 
 .form_line{
@@ -850,6 +850,26 @@ repeat(2, minmax(auto, 1fr)) */
     /* height: 100px; */
     padding: 0px auto;
 }
+
+@media screen and (min-width: 450px){
+    .col1{
+        font-size: 20px;
+        width: 20%;
+    }
+    .col2, .col3, .select_value_error, .select_options{
+        width: 40%;
+    }
+}
+@media screen and (min-width: 550px){
+    .col1{
+        font-size: 25px;
+        width: 20%;
+    }
+    .col2, .col3, .select_value_error, .select_options{
+        width: 40%;
+    }
+}
+
 /* *****************************CHECKOUT.HTML************************* */
 
 #your_cart{
