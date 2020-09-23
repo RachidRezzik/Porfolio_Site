@@ -81,9 +81,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: 25px;
     color: rgb(82, 138, 241);
-    font-family: fantasy;
+    font-family: 'Anton', sans-serif;
     text-shadow: 3.5px 3.5px black;
 }
 
