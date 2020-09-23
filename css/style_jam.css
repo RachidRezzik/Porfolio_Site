@@ -728,7 +728,7 @@ repeat(2, minmax(auto, 1fr)) */
 .col1{
     float: left;
     width: 30%;
-    text-align: left;
+    text-align: center;
 }
 
 .col2, .col3{
