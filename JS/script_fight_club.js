@@ -567,11 +567,11 @@ if (document.URL.includes('user_profile.html')) {
                     <a href="">Ryan Garcia</a>
                 </div>
                 <div class='team_member'>
-                    <a href="/html/portfolio/fight_club/athletes/valdez/garcia.html">  <img src="/html/portfolio/fight_club/athletes/valdez/images/profile.jpg" alt=""></a>
+                    <a href="/html/portfolio/fight_club/athletes/valdez/valdez.html">  <img src="/html/portfolio/fight_club/athletes/valdez/images/profile.jpg" alt=""></a>
                     <a href="">Oscar Valdez</a>
                 </div>
                 <div class='team_member'>
-                    <a href="/html/portfolio/fight_club/athletes/garcia/ruiz.html">  <img src="/html/portfolio/fight_club/athletes/ruiz/images/profile.jpg" alt=""></a>
+                    <a href="/html/portfolio/fight_club/athletes/ruiz/ruiz.html">  <img src="/html/portfolio/fight_club/athletes/ruiz/images/profile.jpg" alt=""></a>
                     <a href="">Andy Ruiz</a>
                 </div>      
             </div>

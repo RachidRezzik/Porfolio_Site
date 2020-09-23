@@ -26,7 +26,8 @@ a{
 
 .login{
     text-align: center;
-    width: 470px;
+    width: 98%;
+    max-width: 470px;
     margin: 70px auto;
     /* margin-bottom: -150px; */
     border: 2px solid black;
@@ -35,7 +36,8 @@ a{
 }
 
 .login h1{
-    font-size: 45px;
+    font-size: 40px;
+    line-height: 55px;
 }
 
 .login span{
@@ -58,26 +60,25 @@ a{
 
 .login_input{
     color: black;
-    width: 75%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 10px 0px;
     margin-bottom: 10px;
     background: rgb(209, 206, 206);
     padding: 20px 0px;
     padding-bottom: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px .5px rgba(0, 0, 0, 0.4);
-
 }
 
 .login_input h2{
     display: block;
-    width: 65%;
+    width: 70%;
     margin: 0px auto;
     text-align: left;
 }
 
 .login_input input{
-    width: 65%;
+    width: 70%;
     height: 25px;
     border-radius: 5px;
     border: none;
@@ -125,7 +126,8 @@ a{
 }
 
 .create_section h2{
-    width: 225px;
+    width: 90%;
+    max-width: 225px;
     margin: 0px auto;
     text-align: left;
 }
@@ -137,7 +139,8 @@ a{
 }
 
 .create_section input, .create_section select{
-    width: 225px;
+    width: 90%;
+    max-width: 225px;
     height: 30px;
     margin: 5px auto;
     margin-bottom: 30px;
@@ -151,14 +154,16 @@ a{
 /* *************ADDITIONAL INFO*********** */
 
 .additional_info_section h2, .additional_info_section h4{
-    width: 220px;
+    width: 90%;
+    max-width: 225px;
     margin: 0px auto;
     text-align: left;
 }
 
 .additional_info_section input, .additional_info_section select{
     display: block;
-    width: 150px;
+    width: 90%;
+    max-width: 225px;
     height: 30px;
     margin: 5px auto;
     margin-bottom: 30px;
@@ -177,9 +182,9 @@ a{
     margin-bottom: 5px;
 }
 
-.additional_info_section input, .additional_info_section select{
+/* .additional_info_section input, .additional_info_section select{
     width: 220px;
-}
+} */
 
 .additional_info_section .day_of_week{
     margin: 0px auto;
@@ -214,7 +219,8 @@ a{
 }
 
 #gym_hours{
-    width: 300px;
+    width: 95%;
+    max-width: 300px;
     height: 250px;
     margin: 10px auto;
     text-align: center;
@@ -320,7 +326,7 @@ footer{
     text-align: center;
 }
 .name h3{
-    font-size: 50px;
+    font-size: 45px;
     color: whitesmoke;
     text-shadow: silver 0px 0px 10px 10px;
 }
@@ -435,29 +441,27 @@ footer{
 }
 
 .nav{
-    /* width: 460px; */
-    /* margin: 0px auto; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    margin-bottom: 0px;
+    margin: 20px auto;
+    margin-bottom: 5px;
 }
 
-#profile_nav{
+#profile_nav, #profile_nav2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 25px;
+    margin-right: 22.5px;
 }
 
-#profile_nav img{
-    margin-right: 7.5px;
+#profile_nav img, #profile_nav2 img{
+    margin-right: 5px;
 }
 
 .nav a{
     color: white;
-    font-size: 20px;
+    font-size: 17.5px;
 }
 
 #header_profile_pic{
@@ -512,6 +516,7 @@ footer{
 
 .bio{
     display: flex;
+    flex-direction: column;
     margin: 0px auto;
     justify-content: center;
     align-items: center;
@@ -519,7 +524,7 @@ footer{
 
 .pro_pic{
     display: block;
-    width: 50%;
+    width: 100%;
     text-align: center;
 }
 
@@ -532,54 +537,12 @@ footer{
 }
 
 .stats{
-    width: 50%;
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 10px;
     text-align: left;
     padding-left: 7.5%;
 }
-
-.record_table{
-    text-align: center;
-}
-
-td{
-    padding: 10px;
-    border: 2px solid black;
-    font-weight: bolder;
-}
-
-th{
-    padding: 10px;
-    padding-bottom: 0px;
-    font-size: 18px;
-
-}
-
-#wins{
-    background: rgb(60, 231, 60);
-}
-
-#losses{
-    background: red;
-}
-
-.requests{
-    display: block;
-    width: 90%;
-    margin-bottom: 10px;
-}
-
-
-.requests button{
-    display: inline-block;
-    width: 45%;
-    color: whitesmoke;
-    background: rgb(76, 181, 247);
-    padding: 10px;
-    font-size: 15px;
-    border-radius: 5px;
-}
-
-
 
 
 /* ******USER PROFILE************ */
@@ -686,7 +649,7 @@ th{
     width: 95%;
     margin: 0px auto;
     display: grid;
-    grid-template-columns: repeat(3, minmax(110px, 1fr));
+    grid-template-columns: repeat(2, minmax(110px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 5px;
     padding-bottom: 15px;
@@ -721,7 +684,7 @@ th{
     width: 95%;
     margin: 0px auto;
     display: grid;
-    grid-template-columns: repeat(3, minmax(110px, 1fr));
+    grid-template-columns: repeat(2, minmax(110px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 5px;
     padding-bottom: 15px;
@@ -759,7 +722,7 @@ th{
     width: 95%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, minmax(110px, 1fr));
+    grid-template-columns: repeat(2, minmax(110px, 1fr));
     grid-auto-rows: auto;
     grid-gap: 5px;
     padding-top: 20px;
