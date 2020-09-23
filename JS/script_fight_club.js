@@ -310,7 +310,7 @@ if (document.URL.includes('more_info.html')) {
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
             </select>
-            <h4 id="state_select_error">*Must Select State*<h4>
+            <h4 id="state_select_error">*Must Select State*</h4>
             <input id="city" type="text" placeholder="City"><h2>Phone #:</h2>
             <h2 style="font-size:17.5px;"><i>(No Dashes Required)</i></h2><input id="phone"><h2 style="text-align:left;">Gym Hours: <br> <h2 style="font-size:17.5px;text-align:left;margin-bottom:35px;"><i>(Leave Blank if Closed)</h2></i></h2>
             
@@ -419,7 +419,7 @@ if (document.URL.includes('more_info.html')) {
                 }
                 if (open == "" && close == "") {
                     document.cookie = `${day.childNodes[0].id}=CLOSED`
-                    document.cookie = `${day.childNodes[0].id}=`
+                    document.cookie = `${day.childNodes[1].id}=`
                 }
             })
         }
@@ -1037,8 +1037,8 @@ if (document.URL.includes('user_profile.html')){
     const header_profile_pics = document.querySelectorAll("#header_profile_pic")
     const edit_profile_pic_button = document.querySelector('#edit_profile_pic')
     const add_post_button = document.querySelector('#add_post')
-    const change_confirmations = document.querySelectorAll('#change_confirmation')
-    const change_status = document.querySelectorAll('#successful_change')
+    const change_confirmations = document.querySelectorAll('.change_confirmation')
+    const change_status = document.querySelectorAll('.successful_change')
     const modal_wrapper = document.querySelector('.modal_wrapper')
     const enlarged_image = document.querySelector('#enlarged_image')
     const modal_image_preview = document.querySelector('.modal_image_preview')
@@ -1047,8 +1047,8 @@ if (document.URL.includes('user_profile.html')){
     const no_posts = document.querySelector('#no_posts')
     let profile_posts = document.querySelectorAll('.posts img')
     const file_inputs = document.querySelectorAll('.image_preview_background input')
-    const preview_images = document.querySelectorAll('#image_preview img')
-    const preview_default_texts = document.querySelectorAll('#image_preview span')
+    const preview_images = document.querySelectorAll('.image_preview img')
+    const preview_default_texts = document.querySelectorAll('.image_preview span')
     const close_image_x = document.querySelectorAll('#close_image_x')
 
     edit_profile_pic_button.addEventListener('click', () => {
@@ -1108,7 +1108,7 @@ if (document.URL.includes('user_profile.html')){
                         post_img.setAttribute('src', reader.result)
                         change_status[i].style.display = 'block'
                         change_status[i].style.color = 'green'
-                        change_status[i].innerHTML = 'Picture Successfully Updated!'
+                        change_status[i].innerHTML = 'Picture Successfully Posted!'
                         let profile_posts = document.querySelectorAll('.posts img')
                         console.log(profile_posts)
                         profile_posts.forEach(post => {
@@ -1141,7 +1141,7 @@ if (document.URL.includes('user_profile.html')){
                             posts.appendChild(new_post)
                             change_status[i].style.display = 'block'
                             change_status[i].style.color = 'green'
-                            change_status[i].innerHTML = 'Picture Successfully Updated!'
+                            change_status[i].innerHTML = 'Picture Successfully Posted!'
                             let profile_posts = document.querySelectorAll('.posts img')
                             console.log(profile_posts)
                             profile_posts.forEach(post => {
@@ -1370,7 +1370,7 @@ if (document.URL.includes('edit_user_info.html')) {
             <option value="WI">Wisconsin</option>
             <option value="WY">Wyoming</option>
             </select>
-            <h4 id="state_select_error">Must Select State<h4>
+            <h4 id="state_select_error">Must Select State</h4>
             <input id="city" type="text" placeholder="City"><h2>Phone #:</h2>
             <h2 style="font-size:17.5px;"><i>(No Dashes Required)</i></h2><input id="phone"><h2 style="text-align:left;">Gym Hours: <br> <h2 style="font-size:17.5px;text-align:left;margin-bottom:35px;"><i>(Leave Blank if Closed)</h2></i></h2>
             
@@ -1539,7 +1539,7 @@ if (document.URL.includes('edit_user_info.html')) {
                     }
                     if (open == "" && close == "") {
                         document.cookie = `${day.childNodes[0].id}=CLOSED`
-                        document.cookie = `${day.childNodes[0].id}=`
+                        document.cookie = `${day.childNodes[1].id}=`
                     }
                 })
             }
@@ -1556,7 +1556,7 @@ if (document.URL.includes('edit_user_info.html')) {
             console.log(input.id, input.value)
             if (input.value != '' && input.type != "time" && input.value != "undefined") {
                 document.cookie = `${input.id}=${input.value}`
-            } else if (input.value == "undefined" || input.value == "") {
+            } else if (input.value == "undefined" || (input.value == "" && input.id.includes('end'))) {
                 document.cookie = `${input.id}=`
             }
         })

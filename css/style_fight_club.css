@@ -160,7 +160,7 @@ a{
     text-align: left;
 }
 
-.additional_info_section input, .additional_info_section select{
+.additional_info_section input, .additional_info_section select, .additional_info_section h4{
     display: block;
     width: 90%;
     max-width: 225px;
@@ -182,22 +182,27 @@ a{
     margin-bottom: 5px;
 }
 
-/* .additional_info_section input, .additional_info_section select{
-    width: 220px;
-} */
-
 .additional_info_section .day_of_week{
     margin: 0px auto;
     text-align: center;
 }
 
+.day_of_week_div{
+    margin-bottom: -50px;
+}
+
 #gym_time_error, #state_select_error{
     margin: 0px auto;
-    margin-top: -25px;
+    margin-top: -15px;
     margin-bottom: 0px;
     font-size: 15px;
+    line-height: 10px;
     width: 220px;
     color: rgb(209, 206, 206);
+}
+
+#city{
+    margin-top: -5px;
 }
 
 #error_gym_info{
@@ -224,6 +229,8 @@ a{
     height: 250px;
     margin: 10px auto;
     text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 #gym_hours td{
@@ -429,10 +436,6 @@ footer{
     background-color: lightgray;
 }
 
-/* .search_nav li:hover{
-    background-color: rgb(170, 169, 169);
-} */
-
 .search_nav i{
     margin-right: auto;
     color: white;
@@ -542,6 +545,37 @@ footer{
     margin-top: 10px;
     text-align: left;
     padding-left: 7.5%;
+}
+
+@media screen and (min-width: 500px){
+    .bio{
+        display: flex;
+        flex-direction: row;
+        margin: 0px auto;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pro_pic{
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+    }
+    
+    .profile_pic{
+        height: 225px;
+        width: 100%;
+        max-width: 250px;
+        border-radius: 100%;
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.137);
+    }
+    
+    .stats{
+        display: inline-block;
+        width: 50%;
+        text-align: left;
+        padding-left: 7.5%;
+    }
 }
 
 
@@ -742,6 +776,16 @@ footer{
     cursor: pointer;
 }
 
+
+@media screen and (min-width: 600px){
+    .teammates_grid, .athlete_posts, .coaches_grid, .gyms_grid{
+        grid-template-columns: repeat(3, minmax(110px, 1fr));
+    }
+}
+
+
+
+
 /* ***************MODALS********************* */
 
 .modal_wrapper, .modal_image_preview, .modal_post_preview{
@@ -760,9 +804,9 @@ footer{
 
 #enlarged_image{
     width: 90%;
-    height: 70vh;
+    height: 55vh;
     max-width: 675px;
-    max-height: 700px;
+    max-height: 675px;
 }
 
 #close_image_x{
@@ -774,10 +818,15 @@ footer{
 }
 
 .image_preview_background{
-    width: 70%;
-    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    padding: 5px;
+    height: 70vh;
     max-width: 475px;
-    max-height: 450px;
+    max-height: 480px;
     background-color: white;
     text-align: center;
     padding-top: 40px;
@@ -785,11 +834,13 @@ footer{
 
 .image_preview_background input{
     padding-top: 30px;
+    width: 90%;
+    margin: 0px auto;
 }
 
-#image_preview{
-    width: 60%;
-    height: 50%;
+.image_preview{
+    width: 85%;
+    height: 45%;
     margin: 0px auto;
     display: flex;
     justify-content: center;
@@ -800,13 +851,13 @@ footer{
     color:black;
 }
 
-#image_preview img{
+.image_preview img{
     width: 100%;
     height: 100%;
     display: none;
 }
 
-#change_confirmation{
+.change_confirmation{
     margin-top: 10px;
     background-color: rgb(76, 181, 247);
     outline: none;
@@ -818,7 +869,7 @@ footer{
     cursor:pointer; 
 }
 
-#successful_change{
+.successful_change{
     font-size: 15px;
     margin-top: 10px;
     display: none;
