@@ -1045,10 +1045,10 @@ repeat(2, minmax(auto, 1fr)) */
 }
 
 #locations_table{
-    width: 95%;
+    width: 98%;
+    max-width: 500px;
     margin: 0px auto;
     margin-bottom: 40px;
-    max-width: 500px;
     border: 1px solid black;
     border-radius: 5px;
 }
@@ -1059,7 +1059,7 @@ repeat(2, minmax(auto, 1fr)) */
 }
 
 #locations_table td{
-    font-size: 17.5px;
+    font-size: 15px;
     padding: 5px;
     text-align: center;
 }
@@ -1090,7 +1090,7 @@ repeat(2, minmax(auto, 1fr)) */
 
 .email_question{
     display: flex;
-    width: 290px;
+    width: 215px;
     justify-content: space-around;
     align-items: center;
     margin: 10px auto;
@@ -1099,7 +1099,7 @@ repeat(2, minmax(auto, 1fr)) */
 
 .email_question input{
     height: 40px;
-    width: 225px;
+    width: 160px;
     text-indent: 10px;
 }
 
