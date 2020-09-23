@@ -250,6 +250,10 @@ for (let i=0; i<add_cart_buttons.length; i++) {
 // ******************CUSTOM JAM REQUEST****************
 
 const request_inputs = document.querySelectorAll('.request_form input')
+const email_input = document.querySelectorAll('.request_form input')[2]
+const invalid_email = document.querySelector('#invalid_email')
+const phone_input = document.querySelectorAll('.request_form input')[3]
+const invalid_phone = document.querySelector('#invalid_phone')
 const add_request_button = document.querySelector('#custom_submit')
 const form_textarea = document.querySelectorAll('.request_form textarea')
 const select_buttons = document.querySelectorAll('select')
@@ -299,13 +303,13 @@ if (document.URL.includes('request.html')) {
     user_jam_name.addEventListener('keyup', () =>{
         let name_value = user_jam_name.value
         let item_title_list = JSON.parse(localStorage.getItem("cart_item_title_list"))
-        if (name_value.toString().length > 15) {
+        if (name_value.toString().length > 10) {
             jam_name_error.style.color = 'red'
-        jam_name_error.innerText = 'Name Must Be 15 Characters Or Less (To Fit On Custom Label)'
+        jam_name_error.innerText = 'Name Must Be 10 Characters Or Less (To Fit On Custom Label)'
         }
         else if(item_title_list.includes(name_value)){
             jam_name_error.style.color = 'red'
-            jam_name_error.innerText = "Duplicate Jam. Max 5 Jars Per Custom Jam" 
+            jam_name_error.innerText = "Duplicate Jam. Max 5 Jars Per Custom Jam. Can Edit Your Current Amount in Cart." 
         }
         else{
             jam_name_error.style.color = 'lightgrey'
@@ -365,6 +369,26 @@ for (let i=0; i<request_inputs.length; i++) {
             error_present = true
         } 
         
+        if (email_input.value.includes('@') && (email_input.value.includes('.com') || email_input.value.includes('.net') || email_input.value.includes('.org')) && email_input.value != ""){
+            invalid_email.style.display = 'none'
+        } else {
+            invalid_email.style.display = 'inline-block'
+            error_present = true
+        }
+
+        if ((phone_input.value.includes('-') || phone_input.value.length != 10) && phone_input.value != ""){
+            invalid_phone.style.display = "inline-block"
+            error_present = true
+        } else{
+            invalid_phone.style.display = 'none'
+        }
+        for (let i=0;i<phone_input.value.length;i++){
+            if(isNaN(parseInt(phone_input.value[i]))){
+                error_present = true
+                invalid_phone.style.display = "inline-block"
+            }
+        }
+
         if (i == 0 && form_textarea[i].value == '') {
             form_textarea[i].placeholder = 'Please Describe Your Jam'
             form_textarea[i].style.setProperty("--c", 'red')
@@ -379,7 +403,7 @@ for (let i=0; i<request_inputs.length; i++) {
         let item_title_list = JSON.parse(localStorage.getItem("cart_item_title_list"))
         if(item_title_list.includes(name_value)){
         jam_name_error.style.color = 'red'
-        jam_name_error.innerText = "Duplicate Jam. Max 5 Jars Per Custom Jam" 
+        jam_name_error.innerText = "Duplicate Jam. Max 5 Jars Per Custom Jam. Can Edit Your Current Amount in Cart." 
         }
         if(jam_name_error.style.color == 'red'){
             error_present = true
