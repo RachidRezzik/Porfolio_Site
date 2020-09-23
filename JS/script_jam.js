@@ -371,7 +371,10 @@ for (let i=0; i<request_inputs.length; i++) {
         
         if (email_input.value.includes('@') && (email_input.value.includes('.com') || email_input.value.includes('.net') || email_input.value.includes('.org')) && email_input.value != ""){
             invalid_email.style.display = 'none'
-        } else {
+        } else if (email_input.value == ""){
+            invalid_email.style.display = 'none'
+        }
+        else {
             invalid_email.style.display = 'inline-block'
             error_present = true
         }
