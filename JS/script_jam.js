@@ -446,7 +446,7 @@ if ( document.URL.includes("checkout.html") ) {
     }
     
     if (document.getElementById("data3").innerHTML == 0) {
-        document.querySelector('.checkout_wrapper').innerHTML = '<h2 id="empty_cart">Your Cart Is Empty...What Are You Waiting For? Go Get Some God Jam!!!</h2><a href="../pages/store.html" class="go_to_store_checkout">Go To Store</a>'
+        document.querySelector('.checkout_wrapper').innerHTML = '<h2 id="empty_cart">Your Cart Is Empty...What Are You Waiting For? Go Get Some God Jam!!!</h2><a href="./store.html" class="go_to_store_checkout">Go To Store</a>'
     } else if (document.getElementById("data3").innerHTML != 0) {
         let cart_html = ''
         let img_srcs = JSON.parse(localStorage.getItem("img_list"))
@@ -634,7 +634,7 @@ if ( document.URL.includes("checkout.html") ) {
                 if (remove_item_buttons.length == 0) {
                     console.log('empty')
                     let cart_html = document.querySelector('.checkout_wrapper')
-                    cart_html.innerHTML = '<h2 id="empty_cart">Your Cart Is Empty...What Are You Waiting For? Go Get Some God Jam!!!</h2><a href="../pages/store.html" class="go_to_store_checkout">Go To Store</a>'
+                    cart_html.innerHTML = '<h2 id="empty_cart">Your Cart Is Empty...What Are You Waiting For? Go Get Some God Jam!!!</h2><a href="./store.html" class="go_to_store_checkout">Go To Store</a>'
                     console.log(cart_html)
                 } else if (remove_item_buttons.length != 0){
                     location.reload()

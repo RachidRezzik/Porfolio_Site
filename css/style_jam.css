@@ -83,7 +83,7 @@ body{
     align-items: center;
     font-size: 24px;
     color: rgb(82, 138, 241);
-    font-family: Impact;
+    font-family: fantasy;
     text-shadow: 3.5px 3.5px black;
 }
 
@@ -697,12 +697,13 @@ repeat(2, minmax(auto, 1fr)) */
     text-align: center;
     margin: 0px auto;
     font-size: 18.5px;
-    width: 475px;
+    width: 98%;
+    max-width: 475px;
     padding: 20px;
 }
 
 .custom_note{
-    font-size: 15px;
+    font-size: 12.5px;
     text-align: center;
 }
 
@@ -864,7 +865,8 @@ repeat(2, minmax(auto, 1fr)) */
     text-align: left;
     align-items: center;
     justify-content: space-between;
-    width: 475px;
+    width: 98%;
+    max-width: 475px;
     margin: 0px auto;
     border: 1px solid black;
     border-radius: 10px;
@@ -892,7 +894,8 @@ repeat(2, minmax(auto, 1fr)) */
 .order_summary{
     border: 1px solid black;
     border-radius: 10px;
-    width: 475px;
+    width: 98%;
+    max-width: 475px;
     margin: 0px auto;
     padding: 20px;
     margin-bottom: 20px;
@@ -920,8 +923,10 @@ repeat(2, minmax(auto, 1fr)) */
 .checkout_wrapper #empty_cart{
     font-size: 30px;
     padding: 30px;
-    width: 475px;
+    width: 98%;
+    max-width: 475px;
     margin: 10px auto;
+
 }
 
 .checkout_wrapper h1{
@@ -951,7 +956,8 @@ repeat(2, minmax(auto, 1fr)) */
 }
 
 .item_in_cart{
-    width: 475px;
+    width: 98%;
+    max-width: 475px;
     margin: 10px auto;
     border: 1px solid black;
     display: flex;
@@ -970,7 +976,8 @@ repeat(2, minmax(auto, 1fr)) */
 }
 
 .cart_item_img img{
-    width: 175px;
+    width: 100%;
+    max-width: 175px;
     height: 175px;
     border-radius: 10px 0px 0px 10px;
 }
@@ -1003,6 +1010,7 @@ repeat(2, minmax(auto, 1fr)) */
     width: 20px;
     height: 20px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .checkout_quantities{
@@ -1036,34 +1044,22 @@ repeat(2, minmax(auto, 1fr)) */
     padding: 30px;
 }
 
-.locations{
-    display: flex;
-    width: 475px;
-    margin: 20px auto;
-    margin-bottom: 75px;
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.locations_image img{
-    width: 180px;
-    height: 180px;
-    padding-right: 15px;
-}
-
-.locations_table{
+#locations_table{
+    width: 95%;
+    margin: 0px auto;
+    margin-bottom: 40px;
+    max-width: 500px;
     border: 1px solid black;
     border-radius: 5px;
 }
 
-.locations_table table th{
-    font-size: 17.5px;
+#locations_table th{
+    font-size: 20px;
     text-align: center;
 }
 
-.locations_table table td{
-    font-size: 14px;
+#locations_table td{
+    font-size: 17.5px;
     padding: 5px;
     text-align: center;
 }
@@ -1073,15 +1069,15 @@ repeat(2, minmax(auto, 1fr)) */
     width: 80%;
     font-size: 12.5px;
     margin: 0px auto;
-    margin-bottom: 100px;
+    margin-bottom: 0px;
     text-align: center;  
-    /* display: block;   */
 }
 
 .other_questions textarea{
     border-radius: 10px;
     text-indent: 20px;
-    width: 400px;
+    width: 98%;
+    max-width: 400px;
     margin: 30px auto;
     font-size: 15px;
     padding-top: 25px;
@@ -1130,69 +1126,9 @@ repeat(2, minmax(auto, 1fr)) */
 
 #contact_question_status{
     margin: 15px auto;
-    margin-bottom: 85px;
+    margin-bottom: 30px;
     font-size: 17.5px;
     color: white;
 }
 
-.clearfix::after {
-    content: " ";
-    display: table;
-    clear: both;
-}
 
-/* ***Media Queries** */
-
-@media screen and (min-width: 600px) {
-    .locations{
-        width: 575px;
-    }
-
-    .locations_image img{
-        width: 235px;
-        height: 235px;
-    }
-    
-    .locations_table{
-        border: 1px solid black;
-        border-radius: 5px;
-    }
-    
-    .locations_table table th{
-        font-size: 17.5px;
-        text-align: center;
-    }
-    
-    .locations_table table td{
-        font-size: 14.5px;
-        padding: 10px;
-        text-align: center;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .locations{
-        width: 700px;
-    }
-    
-    .locations_image img{
-        width: 270px;
-        height: 270px;
-    }
-    
-    .locations_table{
-        border: 1px solid black;
-        border-radius: 5px;
-    }
-    
-    .locations_table table th{
-        font-size: 20px;
-        text-align: center;
-    }
-    
-    .locations_table table td{
-        font-size: 17.5px;
-        padding: 10px;
-        text-align: center;
-    }
-}
