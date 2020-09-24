@@ -193,7 +193,6 @@ body{
 }
 
 .main_body{
-    padding: 75px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,7 +202,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    /* height: calc(100vh - 110px - 80px); */
+    height: calc(100vh - 110px - 80px);
 }
 
 .main_body img{
