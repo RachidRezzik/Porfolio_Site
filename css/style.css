@@ -467,6 +467,13 @@ body{
     background-position: center;
     background-size: cover;
     color: whitesmoke;
+    /* height: calc(100vh - 110px - 80px); */
+}
+
+@media screen and (min-height: 1200px){
+    .about_body_wrapper{
+        height: calc(100vh - 110px - 80px);
+    }
 }
 
 .about_body{
@@ -662,6 +669,12 @@ body{
     background-position: center;
     background-size: cover;
     color: whitesmoke;
+}
+
+@media screen and (min-height: 1200px){
+    .drawing_body{
+        height: calc(100vh - 110px - 80px);
+    }
 }
 
 .drawing_body h3{
