@@ -669,6 +669,7 @@ body{
     background-position: center;
     background-size: cover;
     color: whitesmoke;
+    padding-bottom: 50px;
 }
 
 @media screen and (min-height: 1200px){
