@@ -119,15 +119,6 @@ window.addEventListener("resize", () => {
         dropdown_li_3.replaceChild(desktop_first_child_3, dropdown_li_3.childNodes[1])
         document.querySelector('.main_nav ul').style = ' background: black;text-align: center;display: flex;align-items: center;justify-content: space-evenly;padding: 0px;margin: 0px;'
         mobile_menu_dropdown.src = '/images/nav_menu.png'
-        let about_active_pages = ['about.html', 'soccer.html', 'drawing.html', 'boxing.html', 'story_goals.html']
-        about_active_pages.forEach(page => {
-            if (document.URL.includes(page)){
-                document.querySelectorAll('.nav_link')[1].style.boxShadow =  '0 3.5px 1px -2px rgb(154, 226, 8)';
-            }
-        })
-        if (document.URL.includes('portfolio.html')){
-            document.querySelectorAll('.nav_link')[2].style.boxShadow =  '0 3.5px 1px -2px rgb(154, 226, 8)';
-        }
     } else if (window.innerWidth < 667.5 && mobile_menu_dropdown.src.includes('menu.png')){
         document.querySelector('#about_sub_menu').style.display = ''
         document.querySelector('#portfolio_sub_menu').style.display = ''

@@ -164,6 +164,10 @@ body{
     font-size: 22.5px;
 }
 
+#about_sub_menu li:last-child a{
+    cursor: pointer;
+}
+
 #about_sub_menu .sub_menu2{
     display: none;
     flex-direction: column;
@@ -378,13 +382,16 @@ body{
         margin: 0px;
         padding-left: 5px;
         padding: 0px;
-        background: rgb(54, 214, 139);
+        background: rgb(21, 198, 211);
         min-width: unset;
     }
 
     #about_sub_menu li:last-child a{
-        width: 100%
+        width: 100%;
     }
+    
+
+
 
     #about_select:hover  #about_sub_menu, #portfolio_select:hover  #portfolio_sub_menu{
         display: block;
@@ -399,18 +406,18 @@ body{
     }
 
     #about_sub_menu li a:hover, #portfolio_sub_menu li a:hover, #about_sub_menu li:hover, #portfolio_sub_menu li:hover, #about_sub_menu .sub_menu2 li a:hover{
-        background: rgb(3, 92, 99);
+        background: rgb(4, 108, 116);
     }
 
     #about_sub_menu .sub_menu2 li,#about_sub_menu .sub_menu2 li a{
-        background: rgb(8, 165, 152);
+        background: rgb(21, 198, 211);
         font-size: 17.5px;
     }
 
     #about_sub_menu li a, #portfolio_sub_menu li a{
         font-size: 17.5px;
         padding-left: 5px;
-        background: rgb(54, 214, 139);
+        background: rgb(21, 198, 211);
     }
 
     #about_sub_menu li .dropdown_flex a{
@@ -419,14 +426,6 @@ body{
     
     .nav_menu_div{
         display: none;
-    }
-
-    #active, .active{
-        box-shadow: 0 3.5px 1px -2px rgb(154, 226, 8);
-    }
-
-    .nav_link_highlight:hover{
-        color: rgb(154, 226, 8);
     }
 
     .contact_body{
@@ -509,38 +508,16 @@ body{
     text-decoration: none;
     padding: 10px;
     text-shadow: none;
+    background: rgb(4, 166, 187);
+    border-bottom: rgb(3, 88, 99) 3px solid;
+    border-radius: 10px;
 }
 
 #my_story{
-    background: blue;
     width: 98%;
     max-width: 380px;
     margin: 0px auto;
     margin-bottom: 20px;
-    border-bottom: rgb(3, 3, 139) 4px solid;
-    border-radius: 10px;
-}
-
-#soccer{
-    background: rgb(187, 22, 209);
-    border-bottom: rgb(128, 5, 145) 3px solid;
-    border-radius: 10px;
-}
-
-#boxing{
-    background: red;
-    border-bottom: rgb(161, 4, 4) 3px solid;
-    border-radius: 10px;
-}
-
-#drawing{
-    background: orange;
-    border-bottom: rgb(179, 117, 2) 3px solid;
-    border-radius: 10px;
-}
-
-#my_story:hover, #soccer:hover, #boxing:hover, #drawing:hover{
-    transform: scale(1.015);
 }
 
 #my_story:active, #soccer:active, #boxing:active, #drawing:active{
@@ -758,18 +735,14 @@ body{
     width: 180px;
     height: 45px;
     margin: 15px auto;
-    background: grey;
+    background: rgb(4, 166, 187);
+    border-bottom: rgb(3, 88, 99) 3px solid;
     padding: 15px;
-    border-bottom: rgb(56, 56, 56) 2.5px solid;
     color: whitesmoke;
     text-align: center;
     text-decoration: none;
     text-shadow: none;
     border-radius: 5px;
-}
-
-#data_project:hover{
-    transform: scale(1.015);
 }
 
 #data_project:active{
@@ -836,17 +809,10 @@ body{
     border-radius: 10px;
 }
 
-#project_result{
+#project_result, #project_code{
     margin-bottom: 10px;
-    background: rgb(223, 66, 223);
-    border-bottom: 3px solid rgb(145, 8, 145);   
-    color: whitesmoke;
-}
-
-#project_code{
-    margin-bottom: 10px;
-    background: rgb(70, 123, 236);
-    border-bottom: 3px solid rgb(8, 62, 177);   
+    background: rgb(4, 166, 187);
+    border-bottom: rgb(3, 88, 99) 3px solid;   
     color: whitesmoke;
 }
 
@@ -894,7 +860,7 @@ body{
     padding: 10px;
     max-width: 400px;
     margin: 0px auto;
-    background: rgb(75, 102, 92);
+    background: rgb(7, 190, 123);
     color: whitesmoke;
     font-size: 20px;
     border-radius: 10px;
