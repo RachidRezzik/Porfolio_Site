@@ -409,6 +409,10 @@ body{
         background: rgb(4, 108, 116);
     }
 
+    .nav_link_highlight:hover{
+        color: rgb(6, 216, 231);
+    }
+
     #about_sub_menu .sub_menu2 li,#about_sub_menu .sub_menu2 li a{
         background: rgb(21, 198, 211);
         font-size: 17.5px;
@@ -860,7 +864,7 @@ body{
     padding: 10px;
     max-width: 400px;
     margin: 0px auto;
-    background: rgb(7, 190, 123);
+    background: rgb(20, 185, 111);
     color: whitesmoke;
     font-size: 20px;
     border-radius: 10px;
