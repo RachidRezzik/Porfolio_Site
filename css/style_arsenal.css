@@ -1,0 +1,472 @@
+.navbar-toggler, .navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav{
+    padding: 20px;
+}
+
+nav li{
+    margin: 10px 0px;
+}
+
+nav li a{
+    font-size: 25px;
+    color: black;
+}
+
+.dropdown-menu{
+    padding: 0px;
+}
+
+.dropdown-menu a{
+    font-size: 15px;
+}
+
+.dropdown-menu a:hover{
+    background: lightblue;
+}
+
+#login{
+    display: flex;
+    justify-content: center;
+    background: red;
+    border-radius: 5px;
+    color: white;
+    width: 100px;
+}
+
+#create_account, #create_account2{
+    cursor: pointer;
+}
+
+#modal_sign_in_button{
+    float: right;
+    text-align: right;
+    font-size: 25px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#invalid_email_password{
+    font-size: 15px;
+    color: white;
+}
+
+#join_army{
+    margin-top: 90px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+#modal_create_account_button{
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 20px auto;
+    margin-bottom: 10px;
+    font-size: 25px;
+    background: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#user_icon_switch{
+    justify-content: center;
+
+}
+
+#user_icon{
+    width: 40px;
+    margin: 0px auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 992px){
+    #user_icon{
+        margin-bottom: -30px;
+        padding-left: 5px;
+    }
+    #login{
+        margin-left: 7.5px;
+    }
+}
+
+#user_modal_footer{
+    display: block;
+}
+
+#user_modal_footer a, #already_signed_in_modal_footer a{
+    display: inline-block;
+    background: red;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+#absolute_gooners{
+    font-size: 20px;
+}
+
+@media screen and (min-width: 300px){
+    #absolute_gooners{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 400px){
+    #absolute_gooners{
+        font-size: 30px;
+    }
+}
+
+.landing_section{
+    height: 625px;
+    color: white;
+    background: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(0deg, rgb(0, 0, 0),transparent 100%), url(./images/emirates.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.landing_section h1{
+    font-size: 55px;
+}
+
+.landing_section h4{
+    font-size: 17.5px;
+}
+
+#landing_down_arrow{
+    text-align: center;
+    display: block;
+    width: 160px;
+    margin: 0px auto;
+    margin-top: -90px;
+    height: 25px;
+}
+
+.sign_up_container{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    padding: 50px;
+    font-size: 40px;
+    height: 600px;
+}
+
+.sign_up_container h1{
+    font-size: 45px;
+}
+
+#create_account{
+    display: block;
+    color: white;
+    background: rgb(245, 9, 9);
+    font-size: 30px;
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: red;
+}
+
+.input_error{
+    color: white;
+    font-size: 12.5px;
+    margin: 2.5px;
+    text-indent: 10px;
+}
+
+.main_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    padding: 0px 20px;
+    background: rgb(204, 201, 201);
+}
+
+.main_footer h4{
+    font-size: 10px;
+}
+
+@media screen and (min-width: 325px){
+    .main_footer h4{
+        font-size: 12.5px;
+    }
+}
+
+@media screen and (min-width: 500px){
+    .main_footer h4{
+        font-size: 15px;
+    }
+}
+
+.pill_container_jerseys, #carouselExampleCaptions{
+    width: 90%;
+    max-width: 500px;
+    margin: 30px auto;
+    margin-bottom: 100px;
+}
+
+.tab-pane{
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 0px;
+    padding-bottom: 30px;
+}
+
+.tab-pane h2{
+    margin: 40px auto;
+    font-size: 35px;
+}
+
+.tab-pane img, #carouselExampleCaptions img{
+    width: 100%;
+    height: 500px;
+}
+
+.tab-pane h3{
+    margin: 30px auto;
+}
+
+.shopping_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 98%;
+    margin: 0px auto;
+    max-width: 450px;
+    padding: 1%;
+}
+
+.shopping_link h4{
+    font-size: 15px;
+}
+
+
+#go_to_site{
+    color:white;
+    background: red;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 350px){
+    .shopping_link h4{
+        font-size: 20px;
+    }
+
+    #go_to_site{
+        font-size: 20px;
+    }
+}
+
+.carousel-caption h5{
+    background: black;
+    display: inline-block;
+    padding: 15px;
+    font-size: 27.5px;
+    border-radius: 5px;
+}
+
+#left_arrow, #right_arrow{
+    height: 30px;
+    width: 10px;
+}
+
+#this_year_jerseys, #classic_jerseys{
+    width: 95%;
+    max-width: 800px;
+    margin: 0px auto;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 500px) {
+    #this_year_jerseys, #classic_jerseys{
+        font-size: 30px;
+    }
+}
+
+
+
+/* **************NEWS******************* */
+
+.pill_container_news{
+    width: 95%;
+    max-width: 800px;
+    margin: 30px auto;
+    margin-bottom: 100px;
+}
+
+.featured_article_section img{
+    margin: 0px;
+}
+
+#featured_article{
+    width: 100%;
+    text-align: left;
+    padding: 0px 15px;
+    margin: 20px 0px;
+    color: red;
+    font-size: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.news_article{
+    width: 100%;
+    text-align: left;
+    color: red;
+    padding: 0px 15px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 17.5px;
+}
+
+.news_modal_img{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.modal-body p{
+    text-indent: 15px;
+}
+
+.comments{
+    background: rgb(235, 234, 234);
+    padding: 10px;
+    margin: 20px auto;
+}
+
+.news_modal_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.news_modal_footer textarea{
+    text-indent: 10px;
+    outline: none;
+    padding: 7.5px;
+}
+
+.add_comment, .create_account{
+    font-size: 17.5px;
+    background: red;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.add_comment:active{
+    outline: none;
+}
+
+#login_comment_error, #account_create_error{
+    color: white;
+    padding: 5px;
+}
+
+/* **************PLAYERS******************* */
+
+.pill_container_players{
+    width: 95%;
+    max-width: 1200px;
+    margin: 30px auto;
+    margin-bottom: 100px;
+}
+
+.container{
+    width: 100%;
+}
+
+.nav-pills .nav-link.active {
+    background-color: red;
+}
+
+.nav-pills .nav-link{
+    color: red;
+    font-size: 17.5px;
+}
+
+.player_name{
+    margin: 10px;
+}
+
+
+#player_column img{
+    width: 100%;
+    height: 400px;
+}
+
+#player_column .player_stats, .player_stats{
+    margin: 0px auto;
+    margin-top: 10px;
+    width: 100%;
+    padding: 0px;
+    text-align: left;
+    border-radius: 0px 0px 5px 5px;
+}
+
+
+
+
+
+/* **************COACHES******************* */
+
+.coaches_grid{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0px auto;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-bottom: 100px;
+}
+
+.coach_name{
+    text-align: center;
+    margin: 10px;
+    font-size: 35px;
+}
+
+.coach_img{
+    height: 400px;
+    width: 100%;
+}
