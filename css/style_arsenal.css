@@ -143,7 +143,7 @@ nav li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(0deg, rgb(0, 0, 0),transparent 100%), url(./images/emirates.jpg);
+    background-image: linear-gradient(0deg, rgb(0, 0, 0),transparent 100%), url(/images/arsenal_fansite/emirates.jpg);
     background-size: cover;
     background-position: center;
 }

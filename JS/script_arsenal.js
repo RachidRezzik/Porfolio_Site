@@ -68,7 +68,7 @@ create_account_button.addEventListener("click", () => {
             localStorage.setItem(input.id, input.value)
         })
         localStorage.setItem('signed_in', 'yes')
-        user_icon_switch.innerHTML = `<img src="/images/user_icon.png" id="user_icon" data-toggle="modal" data-target="#user_modal">`
+        user_icon_switch.innerHTML = `<img src="/images/arsenal_fansite/user_icon.png" id="user_icon" data-toggle="modal" data-target="#user_modal">`
         account_create_error.style.color = 'white'
         let user_name = localStorage.getItem('user_name')
         user_modal_title.innerHTML = `Account: ${user_name}`
@@ -154,7 +154,7 @@ modal_sign_in_button.addEventListener('click', () => {
     
     if (error_present == false) {
         $("#sign_in_modal .close").click()
-        user_icon_switch.innerHTML = `<img src="/images/user_icon.png" id="user_icon" data-toggle="modal" data-target="#user_modal">`
+        user_icon_switch.innerHTML = `<img src="/images/arsenal_fansite/user_icon.png" id="user_icon" data-toggle="modal" data-target="#user_modal">`
         account_create_error.style.color = 'white'
         let user_name = localStorage.getItem('user_name')
         user_modal_title.innerHTML = `Account: ${user_name}`
@@ -175,7 +175,7 @@ let signed_in = localStorage.getItem("signed_in")
 const create_account_modal_title = document.querySelector('#create_account_modal_title')
 
 if (signed_in == "yes") {
-    user_icon_switch.innerHTML = `<img src="/images/user_icon.png" id="user_icon" data-toggle="modal" data-target="#user_modal">`
+    user_icon_switch.innerHTML = `<img src="/images/arsenal_fansite/user_icon.png" id="user_icon" data-toggle="modal" data-target="#user_modal">`
     account_create_error.style.color = 'white'
     let user_name = localStorage.getItem('user_name')
     user_modal_title.innerHTML = `Account: ${user_name}`
