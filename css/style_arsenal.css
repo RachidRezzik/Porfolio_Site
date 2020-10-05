@@ -39,6 +39,7 @@ nav li a{
     border-radius: 5px;
     color: white;
     width: 100px;
+    transition: 0.25s;
 }
 
 #portfolio{
