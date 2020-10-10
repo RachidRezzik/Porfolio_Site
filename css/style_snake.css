@@ -19,7 +19,7 @@ body{
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.85);
-    background-image: url(/arsenal_spurs.jpg);
+    background-image: url(/images/arsenal_spurs.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,7 +54,7 @@ body{
 }
 
 #game_board{
-    background-image: url(/grass.jpg);
+    background-image: url(/images/grass2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,4 +1,4 @@
-import {update as updateSnake, draw as drawSnake, snake_speed, game_over} from '/script_snake.js'
+import {update as updateSnake, draw as drawSnake, snake_speed, game_over} from './script_snake.js'
 import {input_direction} from "./script_input.js"
 
 export let last_render_time = 0

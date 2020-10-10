@@ -1,5 +1,5 @@
 
-import {last_render_time, time_before_starting} from '/script_game.js'
+import {last_render_time, time_before_starting} from './script_game.js'
 
 export const snake_speed = 10
 let snake_body = [
@@ -41,7 +41,7 @@ function game_over_screen() {
     game_over = true
     const game_board = document.querySelector('#game_board')
     game_board.innerHTML = ""
-    game_board.style.cssText = `background-image:url(/spurs_celebrating.jpg);width:100vmin;height:100vmin;background:'black';display:flex;justify-content:center;align-items:center;color:'red'`
+    game_board.style.cssText = `background-image:url(/images/spurs_celebrating.jpg);width:100vmin;height:100vmin;background:'black';display:flex;justify-content:center;align-items:center;color:'red'`
     const game_over_text = document.createElement('h1')
     let time = Math.round(((last_render_time/1000) - (time_before_starting/1000)))
     if (time > 60){
@@ -51,7 +51,7 @@ function game_over_screen() {
     } else{
         time = `${time} seconds`
     }
-    game_over_text.innerHTML = `GAME OVER. Spurs Defeat the Gunners in ${time}..<div class="score_div"><img src="/spurs.png"><h2>${food_count}</h2></div><a id="play_again" href="/index.html">Play Again</a><a class="portfolio" href="">Back to Porfolio Home</a>`
+    game_over_text.innerHTML = `GAME OVER. Spurs Defeat the Gunners in ${time}..<div class="score_div"><img src="/images/spurs.png"><h2>${food_count}</h2></div><a id="play_again" href="/index.html">Play Again</a><a class="portfolio" href="/html/portfolio/portfolio.html">Back to Porfolio Home</a>`
     game_over_text.style.color = 'red'
     game_board.appendChild(game_over_text)    
 }
@@ -109,7 +109,7 @@ export function draw(game_board) {
         snake_body.forEach(segment => {
             const snake_element = document.createElement('div')
             const game_board = document.querySelector('#game_board')
-            snake_element.innerHTML = `<img class="club_logo" src="/arsenal.png">`
+            snake_element.innerHTML = `<img class="club_logo" src="/images/arsenal.png">`
             snake_element.style.gridRowStart = segment.y
             snake_element.style.gridColumnStart = segment.x
             snake_element.classList.add('snake')
@@ -117,7 +117,7 @@ export function draw(game_board) {
         })
             const game_board = document.querySelector('#game_board')
             const food_element = document.createElement('div')
-            food_element.innerHTML = `<img class="club_logo" id="spurs_food" src="/spurs.png">`
+            food_element.innerHTML = `<img class="club_logo" id="spurs_food" src="/images/spurs.png">`
             food_element.style.gridRowStart = food_body.y
             food_element.style.gridColumnStart = food_body.x
             food_element.classList.add('food')
