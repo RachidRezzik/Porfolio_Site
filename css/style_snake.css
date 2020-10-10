@@ -1,0 +1,132 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background: black;
+}
+
+.ready_modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url(/arsenal_spurs.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ready_modal h1{
+    width: 90%;
+    max-width: 400px;
+    color: white;
+    text-align: center;
+    background: black;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 35px;
+}
+
+.portfolio{
+    display: block;
+    background: greenyellow;
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 27.5px;
+    width: 275px;
+    margin: 0px auto;
+    padding: 5px;
+    border-radius: 5px;
+    border-bottom: 4px solid rgb(107, 175, 4);
+    transition: 0.25s;
+    cursor: pointer;
+    text-align: center;
+}
+
+#game_board{
+    background-image: url(/grass.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vmin;
+    height: 100vmin;
+    display: none;
+    grid-template-rows: repeat(17, 1fr);
+    grid-template-columns: repeat(17, 1fr);
+}
+
+.snake{
+    background: red;
+    border: .25vmin solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food{
+    background: white;
+    border: .25vmin solid navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.club_logo{
+    width: 60%;
+    height: 60%;
+    max-height: 20px;
+}
+
+#game_board h1{
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.score_div{
+    display: flex;
+    width: 25%;
+    height: 70px;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.score_div img{
+    width: 20px;
+}
+
+.score_div h2{
+    color: white;
+}
+
+#play_again{
+    display: block;
+    width: 200px;
+    background: white;
+    color: red;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-bottom: 4px solid rgb(180, 178, 178);
+}
