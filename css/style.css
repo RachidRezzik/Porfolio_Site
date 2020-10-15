@@ -68,7 +68,7 @@ body{
 .main_nav ul li{
     display: block;
     width: 55%;
-    min-width: 285px;
+    min-width: 255px;
     margin: 0px auto;
     text-align: left;
     line-height: 40px;
@@ -197,6 +197,7 @@ body{
 }
 
 .main_body{
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,19 +207,46 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: calc(100vh - 110px - 80px);
+    height: calc(100vh - 110px - 80px);   
 }
 
+
+
 .main_body img{
-    width: 255px;
-    height: 255px;
+    margin-top: 20px;
+    width: 180px;
+    height: 180px;
     border-radius: 100%;
-    border: 3px solid whitesmoke;
+    border: 2px solid whitesmoke;
+}
+
+@media screen and (min-width:330px){
+    .main_body img{
+        width: 265px;
+        height: 265px;
+    }
+}
+
+#my_portfolio{
+    font-size: 25px;
+    margin: 5px;
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    background: rgb(4, 166, 187);
+    border-bottom: rgb(3, 88, 99) 3.5px solid;
+    border-radius: 10px;
+    transition: 0.75s;
+    margin-bottom: 20px;
+}
+
+#my_portfolio:hover{
+    background: rgb(3, 88, 99);
 }
 
 .main_body h1{
     color: whitesmoke;
-    font-size: 40px;
+    font-size: 33px;
     text-shadow: 1px 1px 5px 5px black;
     margin: 20px;
 }
@@ -226,13 +254,29 @@ body{
 .main_body p{
     margin-top: -5px;
     color: whitesmoke;
-    font-size: 20px;
+    font-size: 15px;
     text-shadow: 1px 1px 5px 5px black;
     text-transform: capitalize;
     width: 95%;
-    max-width: 475px;
+    max-width: 350px;
     padding-bottom: 10px;
 }
+
+@media screen and (min-width:330px) and (min-height:680px){
+    .main_body img{
+        width: 275px;
+        height: 275px;
+    }
+
+    .main_body h1{
+        font-size: 40px;
+    }
+
+    .main_body p{
+        font-size: 20px;
+    }
+}
+
 
 .main_footer{
     background: black;
@@ -374,7 +418,7 @@ body{
     }
 
     #portfolio_sub_menu{
-        width: 170px;
+        width: 175px;
     }
 
     #about_sub_menu li, #portfolio_sub_menu li{
