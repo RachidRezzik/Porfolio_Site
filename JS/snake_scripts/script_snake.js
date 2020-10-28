@@ -51,7 +51,7 @@ function game_over_screen() {
     } else{
         time = `${time} seconds`
     }
-    game_over_text.innerHTML = `GAME OVER. Spurs Defeat the Gunners in ${time}..<div class="score_div"><img src="/images/spurs.png"><h2>${food_count}</h2></div><a id="play_again" href="/index.html">Play Again</a><a class="portfolio" href="/html/portfolio/portfolio.html">Back to Porfolio Home</a>`
+    game_over_text.innerHTML = `GAME OVER. Spurs Defeat the Gunners in ${time}..<div class="score_div"><img src="/images/spurs.png"><h2>${food_count}</h2></div><a id="play_again" href="/index.html">Play Again</a><a class="portfolio" href="/html/work.html">Back to Porfolio Home</a>`
     game_over_text.style.color = 'red'
     game_board.appendChild(game_over_text)    
 }

@@ -142,7 +142,7 @@ nav li a{
 }
 
 .landing_section{
-    height: 625px;
+    height: 575px;
     color: white;
     background: red;
     display: flex;
@@ -155,7 +155,7 @@ nav li a{
 }
 
 .landing_section h1{
-    font-size: 55px;
+    font-size: 25px;
 }
 
 .landing_section h4{
@@ -165,7 +165,8 @@ nav li a{
 #landing_down_arrow{
     text-align: center;
     display: block;
-    width: 160px;
+    width: 50%;
+    max-width: 160px;
     margin: 0px auto;
     margin-top: -90px;
     height: 25px;
@@ -178,20 +179,21 @@ nav li a{
     justify-content: center;
     align-items: center;
     margin-top: 120px;
-    padding: 50px;
+    width: 95%;
+    padding: 50px 0px;
     font-size: 40px;
-    height: 600px;
+    height: 575px;
 }
 
 .sign_up_container h1{
-    font-size: 45px;
+    font-size: 25px;
 }
 
 #create_account{
     display: block;
     color: white;
     background: rgb(245, 9, 9);
-    font-size: 30px;
+    font-size: 25px;
     margin: 20px;
     padding: 10px 20px;
     border: none;
@@ -336,6 +338,13 @@ nav li a{
 
 .featured_article_section img{
     margin: 0px;
+    height: 400px;
+}
+
+@media screen and (min-width: 500px){
+    .featured_article_section img{
+        height: 400px;
+    }
 }
 
 #featured_article{
@@ -386,6 +395,7 @@ nav li a{
     text-indent: 10px;
     outline: none;
     padding: 7.5px;
+    width: 95%;
 }
 
 .add_comment, .create_account{
@@ -464,6 +474,7 @@ nav li a{
     border-radius: 10px;
     padding: 20px 30px;
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .coach_name{

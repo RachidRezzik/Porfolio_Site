@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THEFIGHTCLUB</title>
+    <link rel="stylesheet" href="/css/style_fight_club.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500&family=Bebas+Neue&family=EB+Garamond&family=Merriweather&family=Oswald&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+<body>
+    <body>
+        <header>
+            <div class="name">
+                <h3><i>THE<span>FIGHTCLUB</span></i></h3>
+                <h4>Where Iron Sharpens Iron</h4>
+            </div>
+            <div class="search_bar_container">
+                <input id="search_bar" type="text" placeholder="Search for Fighter/Coach/Gym...">
+                <button><img src="/images/fight_club/search.png" alt=""></button>
+                <ul class="search_nav">
+                </ul>
+            </div>
+            <div class="nav">
+                <div id="profile_nav">
+                    <a href="/html/fight_club/user_profile.html">
+                        <img id="header_profile_pic" src="/images/fight_club/generic_boxing_gym.JPG"></img>
+                    </a>
+                    <a href="/html/fight_club/user_profile.html">
+                        Profile
+                    </a>
+                </div>
+                <div>
+                    <a href="/html/fight_club/browse.html">Browse Profiles</a>
+                </div>
+            </div>
+            <a id='back_to_portfolio' href="/html/work.html">Back to Portfolio Home</a>
+        </header>
+    <div class="profile_wrapper">
+        <section class="athlete_info">
+            <h1 id="athlete_profile_title">Athlete: <span id="profile_name"></span></h1>
+            <div class="bio">
+                <div class="pro_pic">
+                    <img class="profile_pic" src="/images/fight_club/generic_athlete.JPG" alt="">
+                    <button id="edit_profile_pic">Edit Profile Picture</button>
+                </div>
+                <div class="stats">
+                    <h3>Age: <span id="profile_age">N/A</span></h3> 
+                    <h3>Weight Class: <span id="profile_weight_class">N/A</span></h3> 
+                    <h3>Stance: <span id="profile_stance">N/A</span></h3> 
+                    <h3>Gym: <span id="profile_gym">N/A</span></h3> 
+                    <h3>Location: <span id="profile_city">N/A</span>, <span id="profile_state">N/A</span></h3> 
+                </div>
+            </div>
+        </section>
+        <section class="side_info">
+            <h2>
+                Coach
+            </h2>
+            <h4>(No Current Coach)</h4>
+            <div class="teammates">
+                <h2>
+                    Teammates
+                </h2>
+                <h4>(No Current Teammates)</h4>
+            </div>
+        </section>
+        <section class="posts">
+            <h2>
+                Posts
+            </h2>
+            <h4 id="no_posts" style="margin:15px;">(No Posts Available)</h4>
+            <div class="athlete_posts">
+            </div>
+            <button id="add_post">Add Post</button>
+        </section>
+    </div>
+    <section class="modal_image_preview">
+        <div class="image_preview_background">
+            <h1>Preview New Profile Picture:</h1>
+            <input class="file_chosen" type="file">
+            <div class="image_preview">
+                <img src="" alt="No File Selected">
+                <span>Image Preview</span>
+            </div>
+            <button class="change_confirmation">Change Profile Pic</button>
+            <h3 class="successful_change"></h3>
+        </div>
+        <img id="close_image_x" src="/images/fight_club/white_x.png">
+    </section>
+    <section class="modal_post_preview">
+        <div class="image_preview_background">
+            <h1>Preview New Profile Picture:</h1>
+            <input class="file_chosen" type="file">
+            <div class="image_preview">
+                <img src="" alt="No File Selected">
+                <span>Image Preview</span>
+            </div>
+            <button class="change_confirmation">Add Post</button>
+            <h3 class="successful_change"></h3>
+        </div>
+        <img id="close_image_x" src="/images/fight_club/white_x.png">
+    </section>
+    <section class="modal_wrapper">
+        <img id="enlarged_image" src="/images/fight_club/sparring.jpg" alt="">
+        <img id="close_image_x" src="/images/fight_club/white_x.png">
+    </section>
+    <footer>
+        <h3><i>THE<span>FIGHTCLUB</span></i></h3>
+        <div class="nav">
+                <div id="profile_nav2">
+                    <a href="/html/fight_club/user_profile.html">
+                        <img id="header_profile_pic" src="/images/fight_club/generic_boxing_gym.JPG"></img>
+                    </a>
+                    <a href="/html/fight_club/user_profile.html">
+                        Profile
+                    </a>
+                </div>
+                <div>
+                    <a href="/html/fight_club/browse.html">Browse Profiles</a>
+                </div>
+            </div>
+        <h4>@2020 THEFIGHTCLUB.net | All Rights Reserved</h4>
+    </footer>     
+</body>
+<script src="/JS/script_fight_club.js"></script>
+</html>
