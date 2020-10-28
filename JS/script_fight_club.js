@@ -99,7 +99,7 @@ if (document.URL.includes('create_profile.html')) {
             document.cookie = `email=${profile_fields[2].value}`
             document.cookie = `password=${profile_fields[3].value}`
             document.cookie = `profile_type=${profile_selects[0].value}`
-            window.location.href = '/html/portfolio/fight_club/profile_completed_login.html'
+            window.location.href = '/html/fight_club/profile_completed_login.html'
         }    
     })
 }
@@ -146,7 +146,7 @@ if (document.URL.includes('profile_completed_login.html')) {
             error_present = true
         }
         if (error_present == false) {
-            window.location.href = '/html/portfolio/fight_club/more_info.html'        }
+            window.location.href = '/html/fight_club/more_info.html'        }
     })
     login_fields.forEach(field => {
         field.addEventListener('keydown', (event) => {
@@ -165,7 +165,7 @@ if (document.URL.includes('profile_completed_login.html')) {
                     error_present = false
                 }
                 if (error_present == false) {
-                    window.location.href = '/html/portfolio/fight_club/more_info.html'        
+                    window.location.href = '/html/fight_club/more_info.html'        
                 }
             }
         })
@@ -434,7 +434,7 @@ if (document.URL.includes('more_info.html')) {
             }
         })
         if (document.querySelector('#error_gym_info').style.color != 'red') {
-            window.location.href = '/html/portfolio/fight_club/user_profile.html'
+            window.location.href = '/html/fight_club/user_profile.html'
         }
     })  
 }
@@ -521,12 +521,12 @@ if (document.URL.includes('user_profile.html')) {
         const gym = cookies_object.gym
         if (gym == 'El Jefe') {
             let profile_gym = document.querySelector('#profile_gym')
-            profile_gym.innerHTML = `<a class="athlete_gym" href="/html/portfolio/fight_club/gyms/el_jefe/el_jefe.html">${gym} Boxing Club</a>`
+            profile_gym.innerHTML = `<a class="athlete_gym" href="/html/fight_club/gyms/el_jefe/el_jefe.html">${gym} Boxing Club</a>`
             let profile_location = document.querySelector('#profile_location')
             profile_location.innerHTML = 'San Diego, CA'
         } else if (gym == 'R&R') {
             let profile_gym = document.querySelector('#profile_gym')
-            profile_gym.innerHTML = `<a class="athlete_gym" href="/html/portfolio/fight_club/gyms/R&R/R&R.html">${gym} Boxing Club</a>`
+            profile_gym.innerHTML = `<a class="athlete_gym" href="/html/fight_club/gyms/R&R/R&R.html">${gym} Boxing Club</a>`
             let profile_location = document.querySelector('#profile_location')
             profile_location.innerHTML = 'Dallas, TX'
         } else if (gym != 'R&R' || gym != 'El Jefe'){
@@ -548,8 +548,8 @@ if (document.URL.includes('user_profile.html')) {
         <div class="bio">
             <div class="coach_info">
                 <div class="coach">
-                    <a href="/html/portfolio/fight_club/coaches/reynoso/reynoso.html"><img src="/html/portfolio/fight_club/coaches/reynoso/images/profile.jpg" alt=""></a>
-                    <a id="coach_name" href="/html/portfolio/fight_club/coach_reynoso.html">Eddie Reynoso</a>
+                    <a href="/html/fight_club/coaches/reynoso/reynoso.html"><img src="/html/fight_club/coaches/reynoso/images/profile.jpg" alt=""></a>
+                    <a id="coach_name" href="/html/fight_club/coach_reynoso.html">Eddie Reynoso</a>
                 </div>
             </div>
         </div>
@@ -559,19 +559,19 @@ if (document.URL.includes('user_profile.html')) {
             </h2>
             <div class="teammates_grid">
                 <div class='team_member'>
-                    <a href="/html/portfolio/fight_club/athletes/canelo/canelo.html">  <img src="/html/portfolio/fight_club/athletes/canelo/images/profile.jpg" alt=""></a>
+                    <a href="/html/fight_club/athletes/canelo/canelo.html">  <img src="/html/fight_club/athletes/canelo/images/profile.jpg" alt=""></a>
                     <a href="">Canelo Alvarez</a>
                 </div>
                 <div class='team_member'>
-                    <a href="/html/portfolio/fight_club/athletes/garcia/garcia.html">  <img src="/html/portfolio/fight_club/athletes/garcia/images/profile.jpg" alt=""></a>
+                    <a href="/html/fight_club/athletes/garcia/garcia.html">  <img src="/html/fight_club/athletes/garcia/images/profile.jpg" alt=""></a>
                     <a href="">Ryan Garcia</a>
                 </div>
                 <div class='team_member'>
-                    <a href="/html/portfolio/fight_club/athletes/valdez/valdez.html">  <img src="/html/portfolio/fight_club/athletes/valdez/images/profile.jpg" alt=""></a>
+                    <a href="/html/fight_club/athletes/valdez/valdez.html">  <img src="/html/fight_club/athletes/valdez/images/profile.jpg" alt=""></a>
                     <a href="">Oscar Valdez</a>
                 </div>
                 <div class='team_member'>
-                    <a href="/html/portfolio/fight_club/athletes/ruiz/ruiz.html">  <img src="/html/portfolio/fight_club/athletes/ruiz/images/profile.jpg" alt=""></a>
+                    <a href="/html/fight_club/athletes/ruiz/ruiz.html">  <img src="/html/fight_club/athletes/ruiz/images/profile.jpg" alt=""></a>
                     <a href="">Andy Ruiz</a>
                 </div>      
             </div>
@@ -585,8 +585,8 @@ if (document.URL.includes('user_profile.html')) {
         <div class="bio">
             <div class="coach_info">
                 <div class="coach">
-                    <a href="/html/portfolio/fight_club/coaches/james/james.html"><img src="/html/portfolio/fight_club/coaches/james/images/profile.jpg" alt=""></a>
-                    <a id="coach_name" href="/html/portfolio/fight_club/coaches/james/james.html">Derrick James</a>
+                    <a href="/html/fight_club/coaches/james/james.html"><img src="/html/fight_club/coaches/james/images/profile.jpg" alt=""></a>
+                    <a id="coach_name" href="/html/fight_club/coaches/james/james.html">Derrick James</a>
                 </div>
             </div>
         </div>
@@ -596,11 +596,11 @@ if (document.URL.includes('user_profile.html')) {
             </h2>
             <div class="teammates_grid">
                 <div class='team_member'>
-                    <a href="/html/portfolio/fight_club/athletes/spence/spence.html">  <img src="/html/portfolio/fight_club/athletes/spence/images/profile.jpg" alt=""></a>
+                    <a href="/html/fight_club/athletes/spence/spence.html">  <img src="/html/fight_club/athletes/spence/images/profile.jpg" alt=""></a>
                     <a href="">Errol Spence Jr.</a>
                 </div>
                 <div class='team_member'>
-                    <a href="/html/portfolio/fight_club/athletes/charlo/charlo.html">  <img src="/html/portfolio/fight_club/athletes/charlo/images/profile.jpg" alt=""></a>
+                    <a href="/html/fight_club/athletes/charlo/charlo.html">  <img src="/html/fight_club/athletes/charlo/images/profile.jpg" alt=""></a>
                     <a href="">Jermell Charlo</a>
                 </div> 
             </div>
@@ -657,12 +657,12 @@ if (document.URL.includes('user_profile.html')) {
         }
         if (gym == 'El Jefe') {
             let profile_gym = document.querySelector('#profile_gym')
-            profile_gym.innerHTML = `<a class="athlete_gym" href="/html/portfolio/fight_club/gyms/el_jefe/el_jefe.html">${gym} Boxing Club</a>`
+            profile_gym.innerHTML = `<a class="athlete_gym" href="/html/fight_club/gyms/el_jefe/el_jefe.html">${gym} Boxing Club</a>`
             let profile_location = document.querySelector('#profile_location')
             profile_location.innerHTML = 'San Diego, CA'
         } else if (gym == 'R&R') {
             let profile_gym = document.querySelector('#profile_gym')
-            profile_gym.innerHTML = `<a class="athlete_gym" href="/html/portfolio/fight_club/gyms/R&R/R&R.html">${gym} Boxing Club</a>`
+            profile_gym.innerHTML = `<a class="athlete_gym" href="/html/fight_club/gyms/R&R/R&R.html">${gym} Boxing Club</a>`
             let profile_location = document.querySelector('#profile_location')
             profile_location.innerHTML = 'Dallas, TX'
         }
@@ -786,7 +786,7 @@ if (document.URL.includes('landing.html') == false && document.URL.includes('cre
 
     const profiles = {
         name: ['errol spence jr.', 'jermell charlo', 'canelo alvarez', 'ryan garcia', 'oscar valdez', 'andy ruiz', 'eddie reynoso', 'derrick james', 'el jefe boxing club', 'r&r boxing club'],
-        href: ['/html/portfolio/fight_club/athletes/spence/spence.html', '/html/portfolio/fight_club/athletes/charlo/charlo.html', '/html/portfolio/fight_club/athletes/canelo/canelo.html', '/html/portfolio/fight_club/athletes/garcia/garcia.html', '/html/portfolio/fight_club/athletes/valdez/valdez.html', '/html/portfolio/fight_club/athletes/ruiz/ruiz.html', '/html/portfolio/fight_club/coaches/reynoso/reynoso.html', '/html/portfolio/fight_club/coaches/james/james.html', '/html/portfolio/fight_club/gyms/el_jefe/el_jefe.html','/html/portfolio/fight_club/gyms/R&R/R&R.html']
+        href: ['/html/fight_club/athletes/spence/spence.html', '/html/fight_club/athletes/charlo/charlo.html', '/html/fight_club/athletes/canelo/canelo.html', '/html/fight_club/athletes/garcia/garcia.html', '/html/fight_club/athletes/valdez/valdez.html', '/html/fight_club/athletes/ruiz/ruiz.html', '/html/fight_club/coaches/reynoso/reynoso.html', '/html/fight_club/coaches/james/james.html', '/html/fight_club/gyms/el_jefe/el_jefe.html','/html/fight_club/gyms/R&R/R&R.html']
     }
     const nav_search = document.querySelector('.search_nav')
     let search_bar = document.querySelector('#search_bar')
@@ -880,13 +880,13 @@ if (document.URL.includes('landing.html') == false && document.URL.includes('cre
                 else if (match == false) {
                     search_bar_value = document.querySelector('#search_bar').value
                     localStorage.setItem('user_search', search_bar_value)
-                    window.location.href = '/html/portfolio/fight_club/no_results_found.html'
+                    window.location.href = '/html/fight_club/no_results_found.html'
                 }
             })
             if (suggestion_links.length == 0) {
                 search_bar_value = document.querySelector('#search_bar').value
                 localStorage.setItem('user_search', search_bar_value)
-                window.location.href = '/html/portfolio/fight_club/no_results_found.html'
+                window.location.href = '/html/fight_club/no_results_found.html'
             }
         }
     })
@@ -910,7 +910,7 @@ if (document.URL.includes('landing.html') == false && document.URL.includes('cre
         } else{
             search_bar_value = document.querySelector('#search_bar').value
             localStorage.setItem('user_search', search_bar_value)
-            window.location.href = '/html/portfolio/fight_club/no_results_found.html'
+            window.location.href = '/html/fight_club/no_results_found.html'
         }
     })
 
@@ -969,7 +969,7 @@ if (document.URL.includes('landing.html') == false && document.URL.includes('cre
 if (document.URL.includes('no_results_found.html')){
     const profiles = {
         name: ['errol spence jr.', 'jermell charlo', 'canelo alvarez', 'ryan garcia', 'oscar valdez', 'andy ruiz', 'eddie reynoso', 'derrick james', 'el jefe boxing club', 'r&r boxing club'],
-        href: ['/html/portfolio/fight_club/athletes/spence/spence.html', '/html/portfolio/fight_club/athletes/charlo/charlo.html', '/html/portfolio/fight_club/athletes/canelo/canelo.html', '/html/portfolio/fight_club/athletes/garcia/garcia.html', '/html/portfolio/fight_club/athletes/valdez/valdez.html', '/html/portfolio/fight_club/athletes/ruiz/ruiz.html', '/html/portfolio/fight_club/coaches/reynoso/reynoso.html', '/html/portfolio/fight_club/coaches/james/james.html', '/html/portfolio/fight_club/gyms/el_jefe/el_jefe.html','/html/portfolio/fight_club/gyms/R&R/R&R.html']
+        href: ['/html/fight_club/athletes/spence/spence.html', '/html/fight_club/athletes/charlo/charlo.html', '/html/fight_club/athletes/canelo/canelo.html', '/html/fight_club/athletes/garcia/garcia.html', '/html/fight_club/athletes/valdez/valdez.html', '/html/fight_club/athletes/ruiz/ruiz.html', '/html/fight_club/coaches/reynoso/reynoso.html', '/html/fight_club/coaches/james/james.html', '/html/fight_club/gyms/el_jefe/el_jefe.html','/html/fight_club/gyms/R&R/R&R.html']
     }
     const user_search = localStorage.getItem('user_search')
     console.log(user_search)
@@ -1566,7 +1566,7 @@ if (document.URL.includes('edit_user_info.html')) {
             } 
         })
         if (document.querySelector('#error_gym_info').style.color != 'red') {
-            window.location.href = '/html/portfolio/fight_club/user_profile.html'
+            window.location.href = '/html/fight_club/user_profile.html'
         }
     })
 }
@@ -1637,8 +1637,8 @@ if (document.URL.includes('fight_club/')){
             user_profile_pic_src.split('/images')[1]
             user_teammate_info = document.createElement('div')
             user_teammate_info.setAttribute("class", "team_member")
-            user_teammate_info.innerHTML = `<a href="/html/portfolio/fight_club/user_profile.html">  <img src="${user_profile_pic_src}" alt=""></a>
-            <a href="/html/portfolio/fight_club/user_profile.html">${user_name}</a>`
+            user_teammate_info.innerHTML = `<a href="/html/fight_club/user_profile.html">  <img src="${user_profile_pic_src}" alt=""></a>
+            <a href="/html/fight_club/user_profile.html">${user_name}</a>`
             teammates = document.querySelector('.teammates_grid')
             teammates.appendChild(user_teammate_info)
         }
@@ -1648,8 +1648,8 @@ if (document.URL.includes('fight_club/')){
             user_profile_pic_src.split('/images')[1]
             user_teammate_info = document.createElement('div')
             user_teammate_info.setAttribute("class", "team_member")
-            user_teammate_info.innerHTML = `<a href="/html/portfolio/fight_club/user_profile.html">  <img src="${user_profile_pic_src}" alt=""></a>
-            <a href="/html/portfolio/fight_club/user_profile.html">${user_name}</a>`
+            user_teammate_info.innerHTML = `<a href="/html/fight_club/user_profile.html">  <img src="${user_profile_pic_src}" alt=""></a>
+            <a href="/html/fight_club/user_profile.html">${user_name}</a>`
             teammates = document.querySelector('.teammates_grid')
             teammates.appendChild(user_teammate_info)
         }
@@ -1662,16 +1662,16 @@ if (document.URL.includes('fight_club/')){
             user_profile_pic_src.split('/images')[1]
             user_teammate_info = document.createElement('div')
             user_teammate_info.setAttribute("class", "team_member")
-            user_teammate_info.innerHTML = `<a href="/html/portfolio/fight_club/user_profile.html">  <img src="${user_profile_pic_src}" alt=""></a>
-            <a href="/html/portfolio/fight_club/user_profile.html">${user_name}</a>`
+            user_teammate_info.innerHTML = `<a href="/html/fight_club/user_profile.html">  <img src="${user_profile_pic_src}" alt=""></a>
+            <a href="/html/fight_club/user_profile.html">${user_name}</a>`
             teammates = document.querySelector('.teammates_grid')
             teammates.appendChild(user_teammate_info)
         } else if (user_gym == gym && user_profile_type == 'coach'){
             user_profile_pic_src.split('/images')[1]
             user_coaches_info = document.createElement('div')
             user_coaches_info.setAttribute("class", "team_member")
-            user_coaches_info.innerHTML = `<a href="/html/portfolio/fight_club/user_profile.html">  <img src="${user_profile_pic_src}" alt=""></a>
-            <a href="/html/portfolio/fight_club/user_profile.html">${user_name}</a>`
+            user_coaches_info.innerHTML = `<a href="/html/fight_club/user_profile.html">  <img src="${user_profile_pic_src}" alt=""></a>
+            <a href="/html/fight_club/user_profile.html">${user_name}</a>`
             coaches = document.querySelector('.coaches_grid')
             coaches.appendChild(user_coaches_info)
         }
