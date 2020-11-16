@@ -809,7 +809,7 @@ footer{
     max-height: 675px;
 }
 
-#close_image_x{
+.close_image_x{
     width: 30px;
     position: fixed;
     top: 30px;
